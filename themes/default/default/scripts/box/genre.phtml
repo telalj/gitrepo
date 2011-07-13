@@ -1,0 +1,76 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Box
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: genre.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Genre_Menu'); ?></h2>
+        <div class="block">       
+            <ul class="menu">
+                <li><a href="genre/" title="<?= $this->translate('Link_Genre_Home'); ?>"><?= $this->translate('Link_Genre_Home'); ?></a></li>
+
+                <? if ($this->moduleConfig->rss): ?>
+                <li><a href="genre/rss" title="<?= $this->translate('Link_Genre_Rss'); ?>"><?= $this->translate('Link_Genre_Rss'); ?></a></li>
+                <? endif; ?>
+
+                <? if ($this->moduleConfig->api): ?>
+                <li><a href="genre/soap?wsdl" title="<?= $this->translate('Link_Genre_Api'); ?>" target="new"><?= $this->translate('Link_Genre_Api'); ?></a></li>
+                <? endif; ?>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Genre_Menu'); ?></h2>
+        <div class="block">
+            <? if (count($this->genreArray) > 0 ): ?>
+            <? $count = 1; ?>
+            <? foreach($this->genreArray as $genre): ?>
+                <div class="grid_16">
+                    <a href="genre/<?= urlencode($genre['url']); ?>" title="<?= $genre['genre_name']; ?>" <? if($this->genre['genre_id'] == $genre['genre_id']): ?> style="color:red;" <? endif; ?> ><?= $genre['genre_name']; ?></a>
+                    <? if(!empty($genre['child'])): ?>
+                        <br>
+                        <? foreach($genre['child'] as $level2): ?>
+                            &nbsp;&nbsp;-> <a href="genre/<?= urlencode($level2['url']); ?>" title="<?= $level2['genre_name']; ?>" <? if($this->genre['genre_id'] == $level2['genre_id']): ?> style="color:red;" <? endif; ?> ><?= $level2['genre_name']; ?></a><br>
+                            <? if(!empty($level2['child']) ): ?>
+                                <? foreach($level2['child'] as $level3): ?>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;--> <a href="genre/<?= urlencode($level3['url']); ?>" title="<?= $level3['genre_name']; ?>" <? if($this->genre['genre_id'] == $level3['genre_id']): ?> style="color:red;" <? endif; ?> ><?= $level3['genre_name']; ?></a><br>
+                                    <? if(!empty($level3['child'])): ?>
+                                        <? foreach($level3['child'] as $level4): ?>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---> <a href="genre/<?= urlencode($level4['url']); ?>" title="<?= $level4['genre_name']; ?>" <? if($this->genre['genre_id'] == $level4['genre_id']): ?> style="color:red;" <? endif; ?>><?= $level4['genre_name']; ?></a><br>
+                                        <? endforeach; ?>
+                                    <? endif; ?>
+                                <? endforeach; ?>
+                            <? endif; ?>
+                        <? endforeach; ?>
+                    <? endif; ?>
+                </div>
+                <div class="clear"></div>
+            <? endforeach; ?>
+            <? endif; ?>
+        </div>
+    </div>
+    
+
+</div>
+
+

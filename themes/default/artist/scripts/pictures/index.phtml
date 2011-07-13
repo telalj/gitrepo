@@ -1,0 +1,67 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Artist
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->action('artist', 'box', '', array('artist_id' => $this->artist['artist_id'], 'name' => $this->artist['artist'])); ?>
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->artist['artist']; ?> <?= $this->translate('Box_Head_Pictures'); ?></h2>
+        <div class="block">
+            <? if( !empty($this->pictures) ): ?>        
+                <? $count = 1; ?>                    
+                <? foreach($this->pictures as $pictures): ?>
+                    <div class="grid_4">
+                        <center>
+                            <div style="height:126px;overflow:hidden;">
+                                <? if (is_file(Zend_Registry::get('siteRootDir') . $pictures['image'])): ?>
+                                    <a href="<?= $pictures['image']; ?>" dojoType="dojox.image.Lightbox" ><img src="<?= $pictures['image']; ?>" alt="<?= $pictures['title']; ?>" width="126" style="max-height:126px;" border="0" Id="<?= $pictures['id']; ?>" align="left"></a>
+                                <? else: ?>
+                                    <img src="images/no_image_170.gif" alt="<?= $pictures['title']; ?>" width="126" border="0">                            
+                                <? endif; ?> 
+                                <div dojoType="dijit.Tooltip" connectId="<?= $pictures['id']; ?>" label="<b><?= $pictures['title']; ?></b><br><b><?= $this->translate('Text_Artist_Image_Added'); ?>:</b> <?= $pictures['dateadded']; ?>"></div>       
+                                
+                                <? if($this->acl->isAllowed($this->accountType, null, 'delete') ? "1" : "0"): ?>
+                                    <a href="picture/delete/artist-image/id/<?= $pictures['id'];?>" title="<?= $this->translate('Link_Artist_Delete_Image'); ?>"><img src="themes/<?= Zend_Registry::get('themeDir'); ?>/images/icons/delete.gif" border="0"></a>
+                                <? endif; ?>
+                                <? if($this->acl->isAllowed($this->accountType, null, 'update') ? "1" : "0"): ?>
+                                    <a href="picture/edit/artist-image/id/<?= $pictures['id'];?>" title="<?= $this->translate('Link_Artist_Edit_Image'); ?>"><img src="themes/<?= Zend_Registry::get('themeDir'); ?>/images/icons/edit.gif" border="0"></a>
+                                <? endif; ?>
+                             </div>
+                        </center>
+                        
+                    </div>
+
+                    <? if($count > 3): ?>
+                        <div class="clear"></div>
+                        <div class="grid_16"><br></div>
+                        <div class="clear"></div> 
+                        <? $count = 1; ?>
+                    <? else: ?>
+                        <? $count++; ?>
+                    <? endif;?>   
+
+                <? endforeach; ?>                    
+            <? endif; ?>
+            <div class="clear"></div>
+            <?= $this->paginationControl($this->pictures, 'Sliding', 'pagination_control.phtml'); ?>
+        </div>
+    </div>
+</div>

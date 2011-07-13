@@ -1,0 +1,58 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Default
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: account.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<ul class="nav main">
+    <? if ($this->auth->hasIdentity()): ?>
+        <? if($this->acl->isAllowed($this->auth->getIdentity()->account_type, null, 'admin') ? "1" : "0"): ?>
+            <li><a href="admin"><?= $this->translate('Menu_Admin'); ?></a></li>
+        <? endif; ?> 
+    <? endif; ?>
+
+    <li><a href="default/"><?= $this->translate('Menu_Home'); ?></a></li>
+
+    <? if ($this->moduleConfig->module->artist->enabled) : ?>
+        <li><a href="artist/"><?= $this->translate('Menu_Artist'); ?></a></li>
+    <? endif; ?>
+
+    <? if ($this->moduleConfig->module->album->enabled) : ?>
+        <li><a href="album/"><?= $this->translate('Menu_Album'); ?></a>
+            
+        </li>
+    <? endif; ?>
+
+    <? if ($this->moduleConfig->module->genre->enabled) : ?>
+        <li><a href="genre/"><?= $this->translate('Menu_Genre'); ?></a></li>
+    <? endif; ?>
+    <!-- Loop through Menu -->    
+
+
+    <!-- EOF Menu -->
+
+    <? if ($this->moduleConfig->module->account->enabled) : ?>
+        <? if ( $this->auth->hasIdentity() ): ?>
+            <li class="secondary"><a href="account/index"><?= $this->translate('Menu_Account'); ?></a></li>
+            <li class="secondary"><a href="account/logoff"><?= $this->translate('Menu_Logout'); ?></a></li> 
+        <?else: ?>     
+            <li class="secondary"><a href="account/login"><?= $this->translate('Menu_Login'); ?></a></li> 
+       <? endif; ?>
+    <? endif; ?>
+</ul> 

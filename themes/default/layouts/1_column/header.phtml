@@ -1,0 +1,109 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Core
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: header.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->doctype() ?>
+<html>
+    <head>
+        <?= $this->headTitle() ?>
+		<?= $this->headMeta() ?>
+        <base href="<?= $this->baseUrl; ?>" />
+
+		<link rel="stylesheet" type="text/css" href="themes/default/css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/text.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/grid.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/layout.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/nav.css" media="screen" />
+        <!--[if IE 6]><link rel="stylesheet" type="text/css" href="themes/default/css/ie6.css" media="screen"><![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" type="text/css" href="themes/default/csscss/ie.css" media="screen" /><![endif]-->
+    
+        <script type="text/javascript">
+            function playAllTracks(TrackIDs){
+                window.open("<?= $this->baseUrl; ?>play/"+TrackIDs,"Playlist", "menubar=no,width=400px,height=300,toolbar=no,scrollbars=no");
+            }
+        </script>
+        <?  if ($this->dojo()->isEnabled()){
+                $this->dojo()->setLocalPath('js/dojo/dojo.js')
+                    ->addStyleSheetModule('dijit.themes.tundra');
+                echo $this->dojo();
+            }
+        ?>
+        <?= $this->headScript() ?>
+
+	</head>
+	    <body class='tundra'>
+            <?php echo $this->inlineScript() ?>
+            <div class="container_16" id='main_wrapper'>
+                <!-- Sub Menu -->
+                <div class="grid_16">
+                    <?= $this->action('index', 'submenu'); ?>
+                </div>
+                <div class="clear"></div>
+                <!-- EOF Sub Menu -->
+
+                <!-- Header Logo -->
+                <div class="grid_9">
+                    <div class="block">
+                        <img src="themes/default/images/logo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid_7">
+                    <div class="block">
+                    <form id="searchForm"  method="POST" action="search"  name="search">
+
+                        <input type="text" maxlength="128" size="25" value="" name="keyword" id="keyword" title="Enter the search tearm.">
+                        <select name="type" id="type">
+                            <option value="Artist"><?= $this->translate('Field_Default_Artist'); ?></option>                            
+                            <option value="Album"><?= $this->translate('Field_Default_Album'); ?></option>
+                            <option value="Genre"><?= $this->translate('Field_Default_Genre'); ?></option>
+                        </select>
+
+                        <input type="submit" name="op" id="searchSubmit" value="<?= $this->translate('Field_Default_Search'); ?>">
+                    </form>
+                    </div>
+
+                </div>
+                
+                <div class="clear"></div>
+                <!-- EOF Header Logo -->
+
+                
+
+
+                 <!-- Breadcrumb -->
+                <div class="grid_16">
+                    <?
+                    $bc = $this->placeholder('breadcrumbs');
+                    $bc->setPrefix("<ul class='breadcrumb'>\n<li>")
+                        ->setSeparator("</li><li>\n")
+                        ->setIndent(0)
+                        ->setPostfix("</li></ul>\n");
+                    echo $bc;
+
+                    ?>
+                </div>
+                <div class="clear"></div>
+                <!-- EOF Breadcrumb -->
+   
+                <div class="grid_16"><br/></div>
+               
+
+

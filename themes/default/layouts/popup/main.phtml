@@ -1,0 +1,51 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Core
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: main.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <?= $this->headTitle() ?>
+		<?= $this->headMeta() ?>
+        <base href="<?= $this->baseUrl; ?>" />
+
+		<link rel="stylesheet" type="text/css" href="themes/default/css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/text.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/grid.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/layout.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/nav.css" media="screen" />
+        <!--[if IE 6]><link rel="stylesheet" type="text/css" href="themes/default/css/ie6.css" media="screen"><![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" type="text/css" href="themes/default/csscss/ie.css" media="screen" /><![endif]-->
+
+
+        
+	</head>
+	<body>
+        <div class="container_16">
+            <div class="grid_9">
+                <div class="block">
+                    <img src="themes/default/images/logo.jpg" alt="">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <?= $this->layout()->content; ?>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Artist
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->action('artist', 'box', '', array('artist_id' => $this->artist['artist_id'], 'name' => $this->artist['artist'], 'album' => $this->album['title'], 'track' => $this->track['title'])  ); ?>
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Edit'); ?> <?= $this->artist['artist']; ?></h2>
+        <div class="block">
+            <?= $this->form; ?>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Meta_Content_Home_Title'>
+        <tuv xml:lang="en"><seg>Edit Content Pages</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Content_Add_Title'>
+        <tuv xml:lang="en"><seg>Add Content Page</seg></tuv>
+    </tu>
+
+
+     <!-- Box Heads -->   
+    <tu tuid='Box_Head_Content'>
+        <tuv xml:lang="en"><seg>Content</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Search_Pages'>
+        <tuv xml:lang="en"><seg>Search Pages</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Content_Pages'>
+        <tuv xml:lang="en"><seg>Content Pages</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Content_Create_New_Page'>
+        <tuv xml:lang="en"><seg>Create New Page</seg></tuv>
+    </tu>
+    
+    
+    <!-- Table Heads -->
+    <tu tuid='Table_Head_Content_Title'>
+        <tuv xml:lang="en"><seg>Title</seg></tuv>
+    </tu>
+    <tu tuid='Table_Head_Content_URL'>
+        <tuv xml:lang="en"><seg>URL</seg></tuv>
+    </tu>
+    <tu tuid='Table_Head_Content_Date'>
+        <tuv xml:lang="en"><seg>Date</seg></tuv>
+    </tu>
+
+    <!-- Menu -->
+    <tu tuid='Menu_Content'>
+        <tuv xml:lang="en"><seg>Content</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Content_Edit'>
+        <tuv xml:lang="en"><seg>Edit Pages</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Content_Add_Page'>
+        <tuv xml:lang="en"><seg>Add Page</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Content_Edit_Media'>
+        <tuv xml:lang="en"><seg>Edit Media</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Content_Add_Media'>
+        <tuv xml:lang="en"><seg>Add Media</seg></tuv>
+    </tu>
+    
+    <!-- Forms -->
+    <tu tuid='Form_Content_Page_Settings_Legend'>
+        <tuv xml:lang="en"><seg><strong>Page Settings</strong> - fields marked with <span class="required">*</span> are required.</seg></tuv>
+    </tu>   
+    <tu tuid='Form_Content_SEO_Settings_Legend'>
+        <tuv xml:lang="en"><seg><strong>Meta Tags and SEO</strong> - fields marked with <span class="required">*</span> are required.</seg></tuv>
+    </tu>     
+    <tu tuid='Field_Content_Page'>
+        <tuv xml:lang="en"><seg>Page Unique Name:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Description_Title'>
+        <tuv xml:lang="en"><seg>Page Title:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Description_Text'>
+        <tuv xml:lang="en"><seg>Page Content:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_In_Menu'>
+        <tuv xml:lang="en"><seg>Display In Menu:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Protected'>
+        <tuv xml:lang="en"><seg>Require Valid Account:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Parent_Page'>
+        <tuv xml:lang="en"><seg>Parent Page:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Layout'>
+        <tuv xml:lang="en"><seg>Page Layout:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Status'>
+        <tuv xml:lang="en"><seg>Page Status:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Order'>
+        <tuv xml:lang="en"><seg>Menu Order:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Allow_Comment'>
+        <tuv xml:lang="en"><seg>Allow Comments:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Description_Meta_Title'>
+        <tuv xml:lang="en"><seg>Meta Tag Title:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Meta_Description'>
+        <tuv xml:lang="en"><seg>Meta Tag Description:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Description_Keyword'>
+        <tuv xml:lang="en"><seg>Meta Tag Keywords:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Content_Submit'>
+        <tuv xml:lang="en"><seg>Save Page</seg></tuv>
+    </tu>
+    <tu tuid='Field_Content_Page_Description'>
+        <tuv xml:lang="en"><seg>This is the name of the page and will be used for the URL. Please only use alpha-numeric characters</seg></tuv>
+    </tu>
+    <tu tuid='Field_Content_In_Menu_Description'>
+        <tuv xml:lang="en"><seg>Adds this page to the Pages Menu Box.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Content_Protected_Description'>
+        <tuv xml:lang="en"><seg>Require that the reader is signed in and has an active account.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Content_Layout_Description'>
+        <tuv xml:lang="en"><seg>Sets the Page layout.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Content_Parent_Page_Description'>
+        <tuv xml:lang="en"><seg>Assign this as a sub-page.</seg></tuv>
+    </tu>
+     <tu tuid='Field_Content_Order_Description'>
+        <tuv xml:lang="en"><seg>Pages are usually ordered alphabetically, but you can put a number above to change the order pages appear in.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Content_Allow_Comment_Description'>
+        <tuv xml:lang="en"><seg>Allows authenticated readers to leave comments.</seg></tuv>
+    </tu>
+    
+
+    
+    
+        
+    
+    
+    
+    
+
+
+
+
+
+    <!-- Text -->
+    <tu tuid='Text_Content_Keyword_Page_Search'>
+        <tuv xml:lang="en"><seg>Keyword Page Search</seg></tuv>
+    </tu>
+    
+
+    
+
+    <!-- Links -->
+    <tu tuid='Link_Content_Edit_page'>
+        <tuv xml:lang="en"><seg>Edit Page</seg></tuv>
+    </tu>    
+    <tu tuid='Link_Content_Delete_page'>
+        <tuv xml:lang="en"><seg>Delete Page</seg></tuv>
+    </tu>    
+    <tu tuid='Link_Content_View_page'>
+        <tuv xml:lang="en"><seg>View Page</seg></tuv>
+    </tu>
+    <tu tuid='Link_Content_Add_Translation'>
+        <tuv xml:lang="en"><seg>Add Translation</seg></tuv>
+    </tu>
+    
+        
+    
+    
+    
+
+</body>
+</tmx>

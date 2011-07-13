@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Module'>
+        <tuv xml:lang="en"><seg>Play</seg></tuv>
+    </tu>
+
+    <!-- Meta -->
+    <tu tuid='Meta_Play_Index_Title'>
+        <tuv xml:lang="en"><seg>Play Tracks - VooDoo Music Box</seg></tuv>
+    </tu>
+    
+    <!-- Menus -->
+   
+    <tu tuid='Meta_Play_Index_Title'>
+        <tuv xml:lang="en"><seg>Play Tracks - VooDoo Music Box</seg></tuv>
+    </tu>
+
+    <tu tuid='Box_Head_Play_Access_Denied'>
+        <tuv xml:lang="en"><seg>Access Denied</seg></tuv>
+    </tu>
+    <tu tuid='Text_Play_Access_Denied'>
+        <tuv xml:lang="en"><seg>You must have an account to play music. Please close this window and click <i>Sign In</i> from the top Menu.</seg></tuv>
+    </tu>
+
+    <tu tuid='Link_Play_Close_Popup'>
+        <tuv xml:lang="en"><seg>Close</seg></tuv>
+    </tu>
+     
+
+    
+    
+    
+
+    
+</body>
+</tmx>

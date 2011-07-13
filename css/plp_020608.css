@@ -1,0 +1,2749 @@
+	/* The catalog styles are in order as they appear on the page starting from the top */
+
+ 
+
+ 
+
+  /*  Body attributes - Page Background Color or Image */
+
+body{
+
+	margin-left : 0px;
+
+	margin-right : 0px;
+
+	margin-top : 0px;
+
+	margin-bottom : 0px;
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	background-color : #ffffff;
+
+}
+
+form { margin-bottom: 0 ; margin-top: 0 ; 
+
+}
+
+
+
+  /*  Catalog Content Section (middle of the the page) attibutes. */
+
+#main {
+
+	background-color : #FFFFFF;
+
+	padding-bottom : 15px;
+
+	padding-left : 8px;
+
+	padding-right : 8px;
+
+	padding-top : 8px;
+
+	border-top: 0px solid #D9D9D9;
+
+	border-bottom: 0px solid #D9D9D9;
+
+	border-right: 0px solid #D9D9D9;
+
+	border-left: 0px solid #D9D9D9;
+
+}
+
+
+
+  /*  Pop up background and border i.e Privacy Policy popup. */
+
+#popup {
+
+	background-color : #FFFFFF;
+
+	padding : 5 5 5 5;
+
+	margin : 5 5 5 5;
+
+	border-top: 1px solid #D9D9D9;
+
+	border-bottom: 1px solid #D9D9D9;
+
+	border-right: 1px solid #D9D9D9;
+
+	border-left: 1px solid #D9D9D9;
+
+}
+
+  
+
+  /*  Forms - controls all text input fields i.e. RFI, RFQ, email */
+
+.forms {  
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size: 10pt; 
+
+	color: #000000; 
+
+    background-color: #FFF;
+
+	border-style: groove;
+
+	border-top: 1px solid #9C9C9B;
+
+	border-bottom: 1px solid #000000;
+
+	border-right: 1px solid #000000;
+
+	border-left: 1px solid #9C9C9B;
+
+	padding : 1 1 1 1;
+
+}
+
+
+
+  /*  Search Box Attributes - upper left corner of catalog template*/
+
+.searchbg {
+
+	background-color: #FFFFFF;
+
+    border-top: 0px solid #7E7E7E;
+
+	border-bottom: 0px solid #7E7E7E;
+
+	border-right: 0px solid #7E7E7E;
+
+	border-left: 0px solid #7E7E7E;
+
+}
+
+.searchtitle {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.searchtext {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.searchtext:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.searchtext:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.searchtext:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+  /*  Box left to Search box. Controls text for Company Information - only used if selected from settings page of Website Manager*/
+
+  /* This section cannot be used if catalog has e-commerce*/
+
+
+
+.infotext {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.infotext:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.infotext:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.infotext:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+.infotext2 {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.infotext2:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.infotext2:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.infotext2:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+  /*  Start E-Commerce Shopping Cart. Applicable to customers that have E-commerce - area in upper right hand corner of template*/
+
+  /* cartbg3 - this controls the background for the area right of the search box for both the e-commerce and the promotional blurb*/
+
+.cartbg {
+
+	background-color: #FFFFFF;
+
+    padding-bottom : 2px;
+
+	padding-top : 2px;
+
+	padding-left : 2px;
+
+	padding-right : 2px;
+
+}
+
+.cartbg2 {
+
+	background-color: #ffffff;
+
+    padding-bottom : 2px;
+
+	padding-top : 2px;
+
+	padding-left : 2px;
+
+	padding-right : 2px;
+
+}
+
+.cartbg3 {
+
+    background-color: #ffffff;
+
+	border-top: 1px solid #9C9C9B;
+
+	border-bottom: 1px solid #000000;
+
+	border-right: 1px solid #000000;
+
+	border-left: 1px solid #9C9C9B;
+
+}
+
+.cartline {
+
+	background-color: #9C9C9B;
+
+}
+
+.carttitle {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.carttext {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.carttext:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.carttext:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.carttext:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+/* This controls text attributes for Shipping, Tax, Privacy, Terms*/
+
+.carttextsm {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.carttextsm:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.carttextsm:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.carttextsm:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+	/*  End E-Commerce Shopping Cart*/
+
+
+
+  /*  Breadcrumb - links section under Search Box */
+
+.linksbg {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	padding : 2px;
+
+	background-color: #ee1a2e;
+
+    border-top: 1px solid #ACACAC;
+
+	border-bottom: 1px solid #ACACAC;
+
+	border-right: 1px solid #ACACAC;
+
+	border-left: 1px solid #ACACAC;
+
+}
+
+.linksmain{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#ffffff;
+
+}
+
+.linksmain:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#ffffff;
+
+}
+
+.linksmain:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#ffffff;
+
+}
+
+.linksmain:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#ffffff;
+
+}
+
+.linksother{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#ffffff;
+
+}
+
+.linksother:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#ffffff;
+
+}
+
+.linksother:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#ffffff;
+
+}
+
+.linksother:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#ffffff;
+
+}
+
+
+
+  /*  Only 1 link. Usually the background is the same as "#Main" background */
+
+.backtobg {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-weight: normal;
+
+	text-decoration:none;
+
+	color: #000000;
+
+	padding : 1 1 1 1;
+
+}
+
+.backto{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : normal;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.backto:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : normal;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.backto:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : normal;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.backto:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : normal;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+  /* Background for buttons */
+
+.buttonsbg {
+
+	background-color: #ffffff;
+
+	border-top: 0px solid #7E7E7E;
+
+	border-bottom: 1px solid #7E7E7E;
+
+	border-right: 0px solid #7E7E7E;
+
+	border-left: 0px solid #7E7E7E;
+
+	padding : 1 1 1 1;
+
+}
+
+
+
+  /* Small section to the right of the page. Usually these borders have the same colors as the line borders. Do not add more borders to it.  */
+
+.printemailbg{
+
+	background-color: #ffffff;
+
+	border-right: 0px solid #7E7E7E;
+
+	border-left: 0px solid #7E7E7E;
+
+	border-top: 0px solid #7E7E7E;
+
+	border-bottom: 0px solid #7E7E7E;
+
+}
+
+.printemailtext {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.printemailtext:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.printemailtext:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.printemailtext:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+/* version 2 - across */
+
+.v2_printemailbg{
+
+	background-color: #FFF;
+
+	vertical-align: top;
+
+	border-bottom: 1px solid #7E7E7E;
+
+}
+
+.v2_printemailtext {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.v2_printemailtext:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.v2_printemailtext:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.v2_printemailtext:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+  /* use in most of the catalog to separate sections  */
+
+.line{
+
+	background-color: #7E7E7E;
+
+}
+
+
+
+  /*  use only in request quote or information pages */
+
+.line2{
+
+	background-color: #7E7E7E;
+
+}
+
+
+
+/*  Page Title (NEW) */
+
+.pagetitle{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+/*  End Page Title (NEW) */
+
+
+
+  /*  Regular Text used for descriptive content in catalog body */
+
+.text1{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.text1:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.text1:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.text1:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+.Wrappedtext1{
+
+font-family : Arial, Helvetica, sans-serif;
+
+font-size : 9pt;
+
+text-decoration:none;
+
+color:#000000;
+
+}
+
+.Wrappedtext1:link {
+
+font-family : Arial, Helvetica, sans-serif;
+
+font-size : 9pt;
+
+text-decoration:underline;
+
+color:#0000ff;
+
+}
+
+.Wrappedtext1:visited {
+
+font-family : Arial, Helvetica, sans-serif;
+
+font-size : 9pt;
+
+text-decoration:underline;
+
+color:#0000ff;
+
+}
+
+.Wrappedtext1:hover {
+
+font-family : Arial, Helvetica, sans-serif;
+
+font-size : 9pt;
+
+text-decoration:none;
+
+color:#0000ff;
+
+}
+
+.wrappedtext1 ul {
+
+margin: 0px 0px 0px 0px;
+
+padding: 5px 10px 5px 10px;
+
+list-style-position: inside;
+
+list-style-type: square;
+
+}
+
+.wrappedtext1 li {
+
+margin: 0px 0px 0px 0px;
+
+padding: 3px 0px 3px 0px;
+
+}
+
+
+
+/*  Slightly larger text  - Sometimes used for Headers and Titles. Also used for the 'View Items' table page*/
+
+.text2{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.text2:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.text2:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.text2:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+  /*  Slightly smaller text should remain a dark color if main content background is white or light- Usually used in right-side informational columns i.e printable page link, results per page text, also used on RFI,RFQ email forms */
+
+.textsm{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.textsm:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.textsm:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.textsm:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+ /*  Small text to be used at the discretion of the user */
+
+ 
+
+.textsm2{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#ffffff;
+
+}
+
+ /*  Results per page text only  */
+
+.resultsperpagetext{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+
+
+  /*  Text used to show errors in tables and search results - Do not change these font colors*/
+
+.error{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.error:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.error:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.error:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+
+
+  /*  Price and discounts. Used in many pages where e-commerce is applicable - Do not change these font colors */
+
+ .price {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.price:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.price:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.price:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.discount{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.discount:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.discount:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.discount:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.discount2{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.discount2:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.discount2:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.discount2:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+
+
+  /* Section in the Catalog used for promotions, more images, and items that are support items. This is usually on right-side of the page  */
+
+/* main background  */
+
+.channelsbg {
+
+	background-color: #FFFFFF;
+
+	border-bottom: 1px solid #7E7E7E;
+
+	border-right: 1px solid #7E7E7E;
+
+	border-left: 1px solid #7E7E7E;
+
+	border-top : 1px solid #7E7E7E;
+
+}
+
+ /* Background for the Title of the Channel  */
+
+.channelsbg1 {
+
+	background-color: #ee1a2e;
+
+
+
+/* Background for the images...usually the same as channelsbg  */
+
+}
+
+.channelsbg2 {
+
+	background-color: #FFFFFF;
+
+}
+
+.channelsline {
+
+	background-color: #7E7E7E;
+
+}
+
+.channelstitle {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	font-weight : bold;
+
+	text-decoration:none;
+
+	color:#ffffff;
+
+}
+
+.channelstext {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.channelstext:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.channelstext:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.channelstext:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+.channelstext2 {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.channelstext2:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.channelstext2:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.channelstext2:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 9pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+
+
+/* (NEW) Anchors - Product detail pages - on top of tables  */
+
+#anchors{
+
+ font-family : Arial, Helvetica, sans-serif;
+
+ font-size : 8pt;
+
+ text-align: left;
+
+ color: #000000;
+
+ background-color : #FFFFFF;
+
+ padding-bottom : 3px;
+
+ padding-left :3px;
+
+ padding-right : 3px;
+
+ padding-top : 3px;
+
+ border-bottom: 1px solid #7E7E7E;
+
+ border-top : 1px solid #7E7E7E;
+
+}
+
+#anchors a:visited, #anchors a:link, #anchors a:active {
+
+ color: #0000ff;
+
+ text-decoration: none;
+
+ font-size: 8pt;
+
+ text-decoration: underline;
+
+}
+
+#anchors a:hover {
+
+ color: #0000ff;
+
+ text-decoration: none;
+
+ font-size: 8pt;
+
+}
+
+/* End (NEW) Anchors - Product detail pages - on top of tables  */
+
+
+
+  /* (NEW )Table Section - Headers and links  */
+
+  #tableheader{
+
+ font-family : Arial, Helvetica, sans-serif;
+
+ font-size : 10pt;
+
+ text-align: left;
+
+ color: #000000;
+
+ background-color : #FFFFFF;
+
+ border-top : 2px solid #7E7E7E;
+
+ padding-bottom : 3px;
+
+ padding-left :3px;
+
+ padding-right : 3px;
+
+ padding-top : 3px;
+
+}
+
+.tableheadersm{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-align: right;
+
+	color: #000000;
+
+	text-decoration: none;
+
+}
+
+.tableheadersm:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-align: right;
+
+	color: #0000ff;
+
+	text-decoration: underline;
+
+}
+
+.tableheadersm:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-align: right;
+
+	color: #0000ff;
+
+	text-decoration: underline;
+
+}
+
+.tableheadersm:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 8pt;
+
+	text-align: right;
+
+	color: #0000ff;
+
+	text-decoration: none;
+
+}
+
+ /* End (NEW)  End Table Section - Headers and links  */
+
+
+
+/* Table backgrounds. You can control the text alingment here. If the Text-align style is not there, it takes the default style which is left aligned. If you wish to center the text (info inside of table cells), you need to add the style */
+
+.tablebg {
+
+	background-color: #ffffff;
+
+	border-bottom: 1px solid #D9D9D9;
+
+	border-right: 1px solid #D9D9D9;
+
+	border-left: 1px solid #D9D9D9;
+
+	border-top : 1px solid #D9D9D9;
+
+}
+
+ /* This controls the table and background color for the left-side table on the item details and form pages  */
+
+.tablebg1 {
+
+	background-color: #ffffff;
+
+	padding : 4 4 4 4;
+
+	border-bottom: 1px solid #D9D9D9;
+
+	border-right: 1px solid #D9D9D9;
+
+	border-left: 1px solid #D9D9D9;
+
+	border-top : 1px solid #D9D9D9;
+
+}
+
+.tablebg1error {
+
+	background-color: #ffffff;
+
+	padding : 4 4 4 4;
+
+	border-bottom: 1px solid #CC3333;
+
+	border-right: 1px solid #CC3333;
+
+	border-left: 1px solid #CC3333;
+
+	border-top : 1px solid #CC3333;
+
+}
+
+/* This controls the table and background color for the right-side table on the item details and form pages  */
+
+.tablebg2 {
+
+	background-color: #FFFFFF;
+
+	padding : 4 4 4 4;
+
+	border-bottom: 1px solid #D9D9D9;
+
+	border-right: 1px solid #D9D9D9;
+
+	border-left: 1px solid #D9D9D9;
+
+	border-top : 1px solid #D9D9D9;
+
+	text-align : left;
+
+}
+
+
+
+.tablebg2error {
+
+	background-color: #FFFFFF;
+
+	padding : 4 4 4 4;
+
+	border-bottom: 1px solid #CC3333;
+
+	border-right: 1px solid #CC3333;
+
+	border-left: 1px solid #CC3333;
+
+	border-top : 1px solid #CC3333;
+
+	text-align : left;
+
+}
+
+
+
+
+
+/* Tabs (NEW)  */
+
+/* Tabs Section - This coincides with the item details pages with multiple table content i.e Specifications, etc., */
+
+/* Usually the bgcolor will be the same as tablebg1 and tablebg1error */
+
+
+
+.Tabcell1 {
+
+	border-top-width: 1px;
+
+	border-right-width: 0px;
+
+	border-bottom-width: 0px;
+
+	border-left-width: 1px;
+
+	border-top-style: solid;
+
+	border-right-style: solid;
+
+	border-bottom-style: solid;
+
+	border-left-style: solid;
+
+	border-top-color: #D9D9D9;
+
+	border-right-color: #D9D9D9;
+
+	border-bottom-color: #D9D9D9;
+
+	border-left-color: #D9D9D9;
+
+	background-color: #EEEEEE;
+
+}
+
+.Tabcell2 {
+
+	border-top-width: 1px;
+
+	border-right-width: 0px;
+
+	border-bottom-width: 1px;
+
+	border-left-width: 1px;
+
+	border-top-style: solid;
+
+	border-right-style: solid;
+
+	border-bottom-style: solid;
+
+	border-left-style: solid;
+
+	border-top-color: #D9D9D9;
+
+	border-right-color: #D9D9D9;
+
+	border-bottom-color: #D9D9D9;
+
+	border-left-color: #D9D9D9;
+
+}
+
+.Tabspacercell {
+
+	border-top-width: 0px;
+
+	border-right-width: 0px;
+
+	border-bottom-width: 1px;
+
+	border-left-width: 1px;
+
+	border-top-style: solid;
+
+	border-right-style: solid;
+
+	border-bottom-style: solid;
+
+	border-left-style: solid;
+
+	border-top-color: #D9D9D9;
+
+	border-right-color: #D9D9D9;
+
+	border-bottom-color: #D9D9D9;
+
+	border-left-color: #D9D9D9;
+
+}
+
+.Tabcell3 {
+
+	border-top-width: 0px;
+
+	border-right-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-left-width: 1px;
+
+	border-top-style: solid;
+
+	border-right-style: solid;
+
+	border-bottom-style: solid;
+
+	border-left-style: solid;
+
+	border-top-color: #D9D9D9;
+
+	border-right-color: #D9D9D9;
+
+	border-bottom-color: #D9D9D9;
+
+	border-left-color: #D9D9D9;
+
+	background-color: #EEEEEE;
+
+}
+
+.Tabborder {
+
+	border: 1px solid #D9D9D9;
+
+	background-color: #FFFFFF;
+
+}
+
+
+
+/* End Tabs (NEW)  */
+
+ 
+
+/* Search results pages. */
+
+.searchresultsbg {
+
+	background-color: #ffffff;
+
+	padding : 5 5 5 5;
+
+	border-bottom: 1px solid #D9D9D9;
+
+	border-right: 1px solid #D9D9D9;
+
+	border-left: 1px solid #D9D9D9;
+
+	border-top : 1px solid #D9D9D9;
+
+}
+
+.searchresults{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+}
+
+.searchresults:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.searchresults:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#0000ff;
+
+}
+
+.searchresults:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#0000ff;
+
+}
+
+ 
+
+/* Search results error text - do not change the color of the fonts */
+
+.searchresults2{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.searchresults2:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.searchresults2:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.searchresults2:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.searchresultssm{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+.searchresultssm:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.searchresultssm:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#CC3333;
+
+}
+
+.searchresultssm:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#CC3333;
+
+}
+
+/* End Search results pages. */
+
+
+
+  /* Image viewer page - controls the rollovers for the image quality and image size controls */
+
+.imagedisplay{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	font-weight : bold;
+
+	color:#000000;
+
+	background-color: #F4F4F4;
+
+	padding : 2 2 2 2;
+
+}
+
+.imagedisplay:link {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	font-weight : bold;
+
+	color:#CC3333;
+
+	background-color: #FFFFFF;
+
+	padding : 2 2 2 2;
+
+}
+
+.imagedisplay:visited {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	font-weight : bold;
+
+	color:#CC3333;
+
+	background-color: #FFFFFF;
+
+	padding : 2 2 2 2;
+
+}
+
+.imagedisplay:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	font-weight : bold;
+
+	color:#CC3333;
+
+	background-color: #ffffff;
+
+	padding : 2 2 2 2;
+
+}
+
+.imageborder {
+
+	padding : 4 4 4 4;
+
+	border-bottom: 1px solid #D9D9D9;
+
+	border-right: 1px solid #D9D9D9;
+
+	border-left: 1px solid #D9D9D9;
+
+	border-top : 1px solid #D9D9D9;
+
+}
+
+.imageborderselect {
+
+	padding : 4 4 4 4;
+
+	border-bottom: 2px solid #000000;
+
+	border-right: 2px solid #000000;
+
+	border-left: 2px solid #000000;
+
+	border-top : 2px solid #000000;
+
+}
+
+  /* End Image viewer page  */
+
+  
+
+  
+
+/*NEW 07-2006  /* Part Number Configurator Start */
+
+
+
+#configurator {
+
+	font-size : 9pt;
+
+	padding: 0 0 0 0;
+
+ 	margin: 10px 0px 16px 0px;
+
+	width: 100%;
+
+	-moz-box-sizing:border-box;
+
+	box-sizing:border-box;
+
+}
+
+#configurator td {
+
+	border : 1px solid #333333;
+
+	padding: 3px 3px 3px 3px;
+
+	margin: 0 0 0 0;
+
+	-moz-box-sizing:border-box;
+
+	box-sizing:border-box;
+
+}
+
+#configurator .quantity {
+
+background-color: #FFFFFF;
+
+font-weight: bold;
+
+padding: 4px 8px 4px 8px;
+
+margin: 0 0 0 0;
+
+text-align: left;
+
+vertical-align: middle;
+
+width: 70%;
+
+-moz-box-sizing:border-box;
+
+box-sizing:border-box;
+
+}
+
+#configurator .price {
+
+background-color: #F3F3F3;
+
+color: #F00;
+
+font-weight: bold;
+
+padding: 4px 8px 4px 8px;
+
+margin: 0 0 0 0;
+
+text-align: left;
+
+vertical-align: middle;
+
+width: 30%;
+
+-moz-box-sizing:border-box;
+
+box-sizing:border-box;
+
+}
+
+/* Part Number Configurator End*/
+
+
+
+ 
+
+/* Styles for CAD - These styles are not currently implemented */
+
+
+
+#cad {
+
+	background-color: #FFFFFF;
+
+   border-bottom: 1px solid #7E7E7E;
+
+	border-right: 1px solid #7E7E7E;
+
+	border-left: 1px solid #7E7E7E;
+
+	border-top : 1px solid #7E7E7E;
+
+	padding-bottom: 4px;
+
+	padding-left: 4px;
+
+	padding-right: 4px;
+
+	padding-top: 4px;
+
+	margin-bottom: 4px;
+
+	margin-left: 4px;
+
+	margin-right: 4px;
+
+	margin-top: 4px;
+
+	text-align: center;
+
+}
+
+
+
+#cad1 {
+
+	background-color: #ffffff;
+
+	border-top: 1px solid #7E7E7E;
+
+	border-bottom: 1px solid #7E7E7E;
+
+	border-right: 1px solid #7E7E7E;
+
+	border-left: 1px solid #7E7E7E;
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+	padding-bottom: 4px;
+
+	padding-left: 4px;
+
+	padding-right: 4px;
+
+	padding-top: 4px;
+
+}
+
+#cad1 a:visited, #cad1 a:link, #cad1 a:active {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:underline;
+
+	color:#0033FF;
+
+
+
+}
+
+#cad1 a:hover {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 10pt;
+
+	text-decoration:none;
+
+	color:#000000;
+
+
+
+}
+
+.cad2 {
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 11pt;
+
+	color:333333;
+
+	font-weight: bold;
+
+}
+
+
+
+  /*  Update - Sep 07 */
+
+
+
+
+
+.oddbg {
+
+	background-color: #CECECE;
+
+	padding : 0 0 0 0;
+
+	-moz-box-sizing:border-box;
+
+	box-sizing:border-box;
+
+}
+
+.evenbg {
+
+	background-color: #F0F0F0;
+
+	padding : 0 0 0 0;
+
+	-moz-box-sizing:border-box;
+
+	box-sizing:border-box;
+
+}
+
+
+
+
+
+  
+
+  /* Start NEW STYLES - wrapped text */
+
+ 
+
+  .imglink {
+
+
+
+            float: left;
+
+
+
+            margin: 4px 6px 4px 0px;
+
+
+
+            padding: 3px 3px 3px 3px;
+
+
+
+            text-align: center;
+
+
+
+            border-top: 0px solid #999;
+
+
+
+            border-right: 0px solid #555;
+
+
+
+            border-bottom: 0px solid #555;
+
+
+
+            border-left: 0px solid #999;
+
+
+
+            -moz-box-sizing:border-box;
+
+
+
+            box-sizing:border-box;
+
+
+
+}
+
+
+
+.imglink a:link, .imglink a:visited, .imglink a:active {
+
+
+
+            font-size : 8pt;
+
+
+
+            color:#0000FF;
+
+
+
+            text-decoration: underline;
+
+
+
+            -moz-box-sizing:border-box;
+
+
+
+            box-sizing:border-box;
+
+
+
+}
+
+
+
+.imglink a:hover {
+
+
+
+            font-size : 8pt;
+
+
+
+            color:#0000FF;
+
+
+
+            text-decoration: none;
+
+
+
+            -moz-box-sizing:border-box;
+
+
+
+            box-sizing:border-box;
+
+
+
+}
+
+
+
+ 
+
+
+
+.Wrappedtext1{
+
+
+
+font-family : Arial, Helvetica, sans-serif;
+
+
+
+font-size : 9pt;
+
+
+
+text-decoration:none;
+
+
+
+color:#000000;
+
+
+
+}
+
+
+
+.Wrappedtext1:link {
+
+
+
+font-family : Arial, Helvetica, sans-serif;
+
+
+
+font-size : 9pt;
+
+
+
+text-decoration:underline;
+
+
+
+color:#0000ff;
+
+
+
+}
+
+
+
+.Wrappedtext1:visited {
+
+
+
+font-family : Arial, Helvetica, sans-serif;
+
+
+
+font-size : 9pt;
+
+
+
+text-decoration:underline;
+
+
+
+color:#0000ff;
+
+
+
+}
+
+
+
+.Wrappedtext1:hover {
+
+
+
+font-family : Arial, Helvetica, sans-serif;
+
+
+
+font-size : 9pt;
+
+
+
+text-decoration:none;
+
+
+
+color:#0000ff;
+
+
+
+}
+
+
+
+.wrappedtext1 ul {
+
+
+
+margin: 0px 0px 0px 0px;
+
+
+
+padding: 5px 10px 5px 10px;
+
+
+
+list-style-position: inside;
+
+
+
+list-style-type: square;
+
+
+
+}
+
+
+
+.wrappedtext1 li {
+
+
+
+margin: 0px 0px 0px 0px;
+
+
+
+padding: 3px 0px 3px 0px;
+
+
+
+}
+
+
+
+  /* Horizontal Printable Page links */
+
+
+
+.v2_printemailbg{
+
+
+
+            background-color: #FFF;
+
+
+
+            vertical-align: top;
+
+
+
+            border-bottom: 1px solid #7E7E7E;
+
+
+
+}
+
+
+
+.v2_printemailtext {
+
+
+
+            font-family : Arial, Helvetica, sans-serif;
+
+
+
+            font-size : 8pt;
+
+
+
+            text-decoration:none;
+
+
+
+            color:#000000;
+
+
+
+}
+
+
+
+.v2_printemailtext:link {
+
+
+
+            font-family : Arial, Helvetica, sans-serif;
+
+
+
+            font-size : 8pt;
+
+
+
+            text-decoration:underline;
+
+
+
+            color:#0000ff;
+
+
+
+}
+
+
+
+.v2_printemailtext:visited {
+
+
+
+            font-family : Arial, Helvetica, sans-serif;
+
+
+
+            font-size : 8pt;
+
+
+
+            text-decoration:underline;
+
+
+
+            color:#0000ff;
+
+
+
+}
+
+
+
+.v2_printemailtext:hover {
+
+
+
+            font-family : Arial, Helvetica, sans-serif;
+
+
+
+            font-size : 8pt;
+
+
+
+            text-decoration:none;
+
+
+
+            color:#0000ff;
+
+
+
+}
+
+
+
+
+
+  /*  Client Styles go here */
+
+  
+
+  
+
+

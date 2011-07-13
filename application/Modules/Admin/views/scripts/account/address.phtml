@@ -1,0 +1,92 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Admin
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: address.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <?= $this->partial('account/menu.phtml'); ?>
+    <?= $this->partial('account/search-box.phtml'); ?>
+</div>
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Account_Address'); ?></h2>
+        <div class="block">
+             <?
+            if ( $this->form->getMessages() ) {
+                echo '<fieldset style="border:solid 1px red; ">
+                <legend><strong>'.$this->translate('Error_Account_Form_Error').'</strong> - '.$this->translate('Error_Form_Account_Review').'</legend>
+                <div style="color:red;padding:4px; line-height:18px;">';
+                foreach ( $this->form->getMessages() as $key => $val) 
+                {
+                    foreach ($val as $error => $message)
+                    {
+                        print '<img src="/images/icons/flag_16.gif" alt="Field Error"> ' . $message . "<br>";
+                    }
+                }
+                echo "</div></fieldset><br>";
+            }
+            ?>
+            <form method="post" action="admin/account/address/account_id/<?= $this->accountId; ?>">
+                <fieldset>
+                    <legend><?= $this->translate('Form_Account_Address_Shipping_Legend'); ?></legend>
+
+                    <div class="grid_16"><?= $this->form->account_shipping_address_name; ?></div>
+
+                    <div class="grid_16"><?= $this->form->account_shipping_address_street; ?></div>
+                    <div class="grid_16"><?= $this->form->account_shipping_address_street2; ?></div>
+
+                    
+            
+                    <div class="grid_6"><?= $this->form->account_shipping_address_city; ?></div>
+                    <div class="grid_6"><?= $this->form->account_shipping_address_postal; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><?= $this->form->account_shipping_address_zone; ?></div>
+                </fieldset>
+
+                 <fieldset>
+                    <legend><?= $this->translate('Form_Account_Address_Billing_Legend'); ?></legend>
+                
+                    <div class="grid_16"><?= $this->form->account_billing_address_name; ?></div>
+
+                    <div class="grid_16"><?= $this->form->account_billing_address_street; ?></div>
+                    <div class="grid_16"><?= $this->form->account_billing_address_street2; ?></div>
+
+                    
+            
+                    <div class="grid_6"><?= $this->form->account_billing_address_city; ?></div>
+                    <div class="grid_6"><?= $this->form->account_billing_address_postal; ?></div>
+                    <div class="clear"></div>
+
+
+
+                     <div class="grid_16"><?= $this->form->account_billing_address_zone; ?></div>
+
+                     <div class="grid_16">
+                            <?= $this->form->no_csr; ?>
+                            <?= $this->form->submit; ?>
+                        </div>
+                </fieldset>
+            </form>
+
+        </div>
+    
+    </div>
+</div>

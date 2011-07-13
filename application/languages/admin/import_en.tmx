@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Meta_Admin_Import_Title'>
+        <tuv xml:lang="en"><seg>VooDoo Music - Import</seg></tuv>
+    </tu>
+    
+
+    <tu tuid='Box_Head_Import'>
+        <tuv xml:lang="en"><seg>Import</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Import_Upload'>
+        <tuv xml:lang="en"><seg>Upload Music</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Import_Directory'>
+        <tuv xml:lang="en"><seg>Import Media Directory Structure</seg></tuv>
+    </tu>
+    
+    
+
+
+    <tu tuid='Form_Legend_Import'>
+        <tuv xml:lang="en"><seg>Scan Music Collection</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Import_Genre'>
+        <tuv xml:lang="en"><seg>Import Genre</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Import_Directory'>
+        <tuv xml:lang="en"><seg>Import Directory Structure</seg></tuv>
+    </tu>
+    
+
+    <tu tuid='Field_Import_Submit'>
+        <tuv xml:lang="en"><seg>Scan</seg></tuv>
+    </tu>
+    <tu tuid='Field_Directory'>
+        <tuv xml:lang="en"><seg>Directory To Scan</seg></tuv>
+    </tu>
+    <tu tuid='Field_Directory_Description'>
+        <tuv xml:lang="en"><seg>This must be the full path to a folder that contains mp3 files to scan. The directory must be readable by your webserver.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Import_Genre_Submit'>
+        <tuv xml:lang="en"><seg>Continue</seg></tuv>
+    </tu>
+    <tu tuid='Field_Import_Dir'>
+        <tuv xml:lang="en"><seg> - Directory: </seg></tuv>
+    </tu>
+    <tu tuid='Field_Import_Dir_Name'>
+        <tuv xml:lang="en"><seg>Directory</seg></tuv>
+    </tu>
+    <tu tuid='Field_Import_Dir_Path'>
+        <tuv xml:lang="en"><seg>Path</seg></tuv>
+    </tu>
+    <tu tuid='Field_Import_Dir_Last_Scan'>
+        <tuv xml:lang="en"><seg>Last Scan</seg></tuv>
+    </tu>
+    <tu tuid='Field_Import_Never_Scanned'>
+        <tuv xml:lang="en"><seg>Never Scaned</seg></tuv>
+    </tu>
+    
+    
+
+    <tu tuid='Error_Directory_DirIsRead'>
+        <tuv xml:lang="en"><seg>Directory is not accessable.</seg></tuv>
+    </tu>
+    
+
+    <tu tuid='Text_Import_Warning'>
+        <tuv xml:lang="en"><seg>Importing files may take some time depending on the size of your collection. Once you click <i>Scan</i> please wait until the script finishes. You may re scan your collection at anytime and VooDoo will only load files that are not in the database.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Import_Genre_Warning'>
+        <tuv xml:lang="en"><seg>Importing Genres gets it's information form files, albums and artists and will create the mapping to the Artist. This will remove the current mapping and re-create the mapping. This may take some time depending on the size of your music library.</seg></tuv>
+    </tu>   
+    <tu tuid='Text_Import_Upload_Warning'>
+        <tuv xml:lang="en"><seg>Files must be Zip format. The folder structure of the zip files should be artist/album/tracks.mp3. Only MP3 format is accepted.</seg></tuv>
+    </tu>
+     <tu tuid='Text_Import_Directory_Warning'>
+        <tuv xml:lang="en"><seg>This tool will scan your media directory structure and use it to add search and browse functions. This is a recommended step as it will help in the navigation of your music collection. If you have a large collection this may take some time to complete.</seg></tuv>
+    </tu>
+    
+    
+
+
+    </body>
+</tmx>

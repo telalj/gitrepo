@@ -1,0 +1,128 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Admin
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: view.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <?= $this->partial('account/menu.phtml'); ?>
+    <?= $this->partial('account/search-box.phtml'); ?>
+</div>
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Account_Details');?></h2>
+        <div class="block">
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Id'); ?>:</strong> <?= $this->userData['account_id']; ?></p></div>
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Firstname'); ?>:</strong> <?= $this->userData['account_firstname']; ?></p></div>
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Lastname'); ?>:</strong> <?= $this->userData['account_lastname']; ?></p></div>
+            <div class="clear"></div>
+
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Username'); ?>:</strong> <?= $this->userData['account_username']; ?></p></div>
+            <div class="grid_6"><p><strong><?= $this->translate('Field_Account_Email'); ?>:</strong> <a href="/admin/account/email/account_id/<?= $this->userData['account_id']; ?>"><?= $this->userData['account_email']; ?></a></p></div>
+            <div class="clear"></div>
+
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Telephone'); ?>:</strong>  <?= $this->userData['account_telephone']; ?></p></div>
+            <div class="grid_4"></p><strong><?= $this->translate('Field_Account_Alt_Telephone'); ?>:</strong> <?= $this->userData['account_alt_telephone']; ?></p></div>
+            <div class="clear"></div>
+
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Receive_Email'); ?>:</strong> <? if ($this->userData['account_receive_email']):echo $this->translate('Text_Yes'); else: echo $this->translate('Text_No'); endif; ?></p></div>
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Email_Type'); ?>:</strong> <? if($this->userData['account_email_type'] == 'text'): echo $this->translate('Field_Account_Email_Type_Text'); else: echo $this->translate('Field_Account_Email_Type_HTML'); endif;?></p></div>
+            <div class="clear"></div>
+            
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Status'); ?>:</strong> <?= $this->accountStatus($this->userData['account_status']); ?></p></div>
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Account_Type')?>:</strong> <?= $this->accountType($this->userData['account_type']); ?></p></div>
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Last_Login'); ?>:</strong> <?= $this->userData['last_login']; ?></p></div>
+            <div class="grid_4"><p><strong><?= $this->translate('Field_Login_Ip'); ?>:</strong> <?= $this->userData['login_ip']; ?></p></div>
+
+            <div class="clear"></div>
+
+            <div class="grid_16"><a href="admin/account/edit/account_id/<?= $this->userData['account_id']; ?>"><?= $this->translate('Link_Account_Edit'); ?></a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Account_Address'); ?></h2>
+        <div class="block">
+            
+            <div class="grid_8">
+                <fieldset>
+                    <legend><?= $this->translate('Box_Head_Account_Billing_Address');?></legend>
+                    <div class="grid_16"><?= $this->billingAddress['account_address_name']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><?= $this->billingAddress['account_address_street']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><?= $this->billingAddress['account_address_street2']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_6"><?= $this->billingAddress['account_address_city']; ?></div> 
+                    <div class="grid_6"><?= $this->billingAddress['zone_name']; ?></div>
+                    <div class="grid_4"><?= $this->billingAddress['account_address_postal']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><?= $this->billingAddress['countries_iso_code_3']; ?></div>
+                    <div class="clear"></div>
+        
+                    <div class="grid_16"><a href="admin/account/address/account_id/<?= $this->userData['account_id']; ?>"><?= $this->translate('Link_Account_Edit'); ?></a></div>
+                    <div class="clear"></div>
+                </fieldset>
+            </div>
+            
+            <div class="grid_8">
+                <fieldset>
+                    <legend><?= $this->translate('Box_Head_Account_Shipping_Address');?></legend>
+                    <div class="grid_16"><?= $this->shippingAddress['account_address_name']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><?= $this->shippingAddress['account_address_street']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><?= $this->shippingAddress['account_address_street2']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_6"><?= $this->shippingAddress['account_address_city']; ?></div> 
+                    <div class="grid_6"><?= $this->shippingAddress['zone_name']; ?></div>
+                    <div class="grid_4"><?= $this->shippingAddress['account_address_postal']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><?= $this->shippingAddress['countries_iso_code_3']; ?></div>
+                    <div class="clear"></div>
+
+                    <div class="grid_16"><a href="admin/account/address/account_id/<?= $this->userData['account_id']; ?>"><?= $this->translate('Link_Account_Edit'); ?></a></div>
+                    <div class="clear"></div>
+                </fieldset>
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Account_Recent_Orders');?></h2>
+        <div class="block">
+            
+        </div>
+    </div>
+
+    
+
+</div>

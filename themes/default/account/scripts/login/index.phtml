@@ -1,0 +1,49 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Account
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_16">
+    <div class="box">
+
+        <h2><?= $this->translate('Box_Head_Account_Login'); ?></h2>
+        <div class="block">
+            <?= $this->form; ?>
+            <p><?= $this->translate('Text_Account_Lost_Password'); ?> <a href="account/lost-password/" title="<?= $this->translate('Link_Account_Lost_Password'); ?>"><?= $this->translate('Link_Account_Lost_Password'); ?></a></p>
+        </div>
+    </div>
+
+    <div class="box">
+
+        <h2><?= $this->translate('Box_Head_Account_Register'); ?></h2>
+        <div class="block">
+            <p><?= $this->translate('Text_Account_Register_Mesg'); ?></p>
+
+            <a href="account/register"><?= $this->translate('Link_Account_Register'); ?></a>
+            <br><br>
+        </div>
+    </div>
+
+</div>
+
+
+ 
+
+                            

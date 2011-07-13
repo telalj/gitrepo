@@ -1,0 +1,62 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Admin
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <?= $this->partial('content/menu.phtml'); ?>
+    
+    <?= $this->partial('content/search.phtml'); ?>    
+    
+    <?= $this->partial('content/add-help-en.phtml'); ?>
+</div>
+
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Content_Pages');?></h2>
+        <div class="block">
+            <table>
+                <tr>
+                    <th width="60%"><?= $this->translate('Table_Head_Content_Title');?></th>
+                    <th width="40%"><?= $this->translate('Table_Head_Content_URL');?></th>
+                    <th width="20%"><?= $this->translate('Table_Head_Content_Date');?></th>
+                </tr>
+                <? if (count($this->paginator)): ?>
+                <? foreach ($this->paginator as $item): ?>
+                <tr>
+                    <td><?= $item['content_page']; ?><br>
+                         <a href="admin/content/edit/content_id/<?= $item['content_id']; ?>"><?= $this->translate('Link_Content_Edit_page'); ?></a> |
+                         <a href="admin/content/add-translation/content_id/<?= $item['content_id']; ?>"><?= $this->translate('Link_Content_Add_Translation'); ?></a> | 
+                         <a href="admin/content/delete/content_id/<?= $item['content_id']; ?>"><?= $this->translate('Link_Content_Delete_page'); ?></a> | 
+                         <a href="<?= $this->configuration->site->siteUrl; ?>/<?= $item['content_page'];?>.html" target="new"><?= $this->translate('Link_Content_View_page'); ?></a> 
+                    </td>
+                    <td><?= $item['content_page'];?>.html</td>
+                    <td><?= $item['content_create_date']; ?></td>
+                </tr>
+                <? endforeach; ?>
+                <? endif; ?>
+            </table>
+
+            <?= $this->paginationControl($this->paginator, 'Sliding', 'pagination_control.phtml'); ?>
+            <br>
+        </div>
+    
+    </div>
+</div>

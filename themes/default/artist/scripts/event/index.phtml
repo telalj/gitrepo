@@ -1,0 +1,73 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Artist
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->action('artist', 'box', '', array('artist_id' => $this->artist['artist_id'], 'name' => $this->artist['artist'])); ?>
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->artist['artist']; ?> <?= $this->translate('Box_Head_Event'); ?></h2>
+        <div class="block">
+            <? if($this->events['total'] > 0 ): ?>
+                <? foreach($this->events['events'] as $event): ?>
+                    <h3><?= $event['title']; ?></h3>
+                    <div class="grid_4">
+                        <!-- Artists -->
+                        <div class="grid_6"><b><?= $this->translate('Text_Artist_Artists'); ?>: </b></div>
+                        <div class="grid_10">
+                            <span id="artists_<?= $event['id']; ?>" style="cursor:pointer;"><?= $event['artist'][0]; ?></span>
+                            <div dojoType="dijit.Tooltip" connectId="artists_<?= $event['id']; ?>" label="<? if(count($event['artist']) > 0 ): ?><b><?= $this->translate('Text_Artist_Artists'); ?></b><br><? foreach($event['artist'] as $artist): ?><?= $artist; ?><br><? endforeach; ?><? endif; ?>"></div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <!-- Headliner -->
+                        <div class="grid_6"><b><?= $this->translate('Text_Artist_Headliner'); ?>: </b></div>
+                        <div class="grid_10"><?= $event['headliner']; ?></div>
+                        <div class="clear"></div>
+
+                        <!-- Venue -->
+                        <div class="grid_6"><b><?= $this->translate('Text_Artist_Venue'); ?>: </b></div>
+                        <div class="grid_10">
+                            <span id="venue_<?= $event['id']; ?>" style="cursor:pointer;"><?= $event['venue']['name']; ?></span>
+                            <div dojoType="dijit.Tooltip" connectId="venue_<?= $event['id']; ?>" label="<b><?= $event['venue']['name']; ?></b><br><?= $event['venue']['location']['city']; ?><br><?= $event['venue']['location']['country'];?>"></div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <!-- Date -->
+                        <div class="grid_6"><b><?= $this->translate('Text_Artist_Venue_Date'); ?>: </b></div>
+                        <div class="grid_10"><?= $event['startDate']; ?></div>
+                        <div class="clear"></div>
+
+                    </div>
+                    <div class="grid_12">
+                        <? if(!empty($event['image'][2])): ?>
+                            <img src="<?= $event['image'][2]; ?>" align="left" style="padding-right:8px;">
+                        <? endif; ?>
+                        <?= $event['description']; ?>
+                    </div>
+                    <div class="clear"></div>
+                    <hr>
+                <? endforeach; ?>
+            <? else: ?>
+                <p><?= $this->translate('Text_Artist_No_Events'); ?></p>
+            <? endif; ?>
+        </div>
+    </div>
+</div>

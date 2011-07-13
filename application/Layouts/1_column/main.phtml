@@ -1,0 +1,155 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Core
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: main.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->doctype() ?>
+<html>
+    <head>
+        <?= $this->headTitle() ?>
+		<?= $this->headMeta() ?>
+        <base href="<?= $this->baseUrl; ?>" />
+
+		<link rel="stylesheet" type="text/css" href="themes/default/css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/text.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/grid.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/layout.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/default/css/nav.css" media="screen" />
+        <!--[if IE 6]><link rel="stylesheet" type="text/css" href="themes/default/css/ie6.css" media="screen"><![endif]-->
+        <!--[if gte IE 7]><link rel="stylesheet" type="text/css" href="themes/default/csscss/ie.css" media="screen" /><![endif]-->
+
+        <? if ($this->dojo()->isEnabled()){
+                    $this->dojo()->setLocalPath('js/dojo/dojo.js')
+                        ->addStyleSheetModule('dijit.themes.tundra');
+                    echo $this->dojo();
+                   }
+                ?>
+        <?= $this->headScript() ?>
+
+	</head>
+	    <body class="tundra">
+            <div class="container_16">
+                <!-- Sub Menu -->
+                <div class="grid_16">
+                    <ul class="nav main">
+                        <li><a href="admin/configure"><?= $this->translate('Menu_Configuration'); ?></a>
+                            <ul>
+                                <li><a href="admin/configure/index"><?= $this->translate('Menu_Configure_My_Store'); ?></a></li>
+                                <li><a href="admin/configure/modules"><?= $this->translate('Menu_Configure_Modules'); ?></a></li>
+                                <li><a href="admin/configure/boxes"><?= $this->translate('Menu_Configure_Boxes'); ?></a></li>
+                                </ul>
+                        </li>
+                        
+                         <li><a href="admin/account" ><?= $this->translate('Menu_Customers');?></a>
+                            <ul>
+                                <li><a href="admin/account" title="<?= $this->translate('Menu_Customers'); ?>"><?= $this->translate('Menu_Customers'); ?></a></li>
+                            </ul>
+                        </li> 
+                        <li><a href="admin/import" title="<?= $this->translate('Menu_Admin_Import'); ?>"><?= $this->translate('Menu_Admin_Import'); ?></a>
+                            <ul>
+                                <li><a href="admin/import/upload" title="<?= $this->translate('Menu_Admin_Import_Upload'); ?>"><?= $this->translate('Menu_Admin_Import_Upload'); ?></a></li>
+                                <li><a href="admin/import/directory" title="<?= $this->translate('Menu_Admin_Import_Directory'); ?>"><?= $this->translate('Menu_Admin_Import_Directory'); ?></a></li>
+                            </ul>
+                        </li>
+                         <li><a href="admin"><?= $this->translate('Menu_Reports');?></a></li> 
+                        <li><a href="admin"><?= $this->translate('Menu_Tools'); ?></a>
+                            <ul>
+                                <li><a href="admin/content/index"><?= $this->translate('Menu_Content_Manager'); ?></a></li>
+                                <li><a href="admin/news"><?= $this->translate('Menu_News_Manager'); ?></a></li>
+                                <li><a href="admin/blog"><?= $this->translate('Menu_Blog_Manager'); ?></a></li>
+                                <li><a href="admin/contact"><?= $this->translate('Menu_Contacts'); ?></a></li>
+                            </ul>
+                        </li>
+                        <li class="secondary"><a href="<?= $this->baseUrl; ?>"><?= $this->translate('Menu_Catelog'); ?></a></li>
+                     </ul>
+
+                </div>
+                <div class="clear"></div>
+                <!-- EOF Sub Menu -->
+
+                <!-- Header Logo -->
+                <div class="grid_9">
+                    <div class="block">
+                        <img src="themes/default/images/logo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid_7">
+                    <div class="block">
+                    <form id="searchForm"  method="POST" action="search"  name="search">
+
+                        <input type="text" maxlength="128" size="25" value="" name="keyword" id="keyword" title="Enter the search tearm.">
+                        <select name="type" id="type">
+                            <option value="Artist">Artist</option>                            
+                            <option value="Album">Album</option>
+
+                            <option value="Genre">Genre</option>
+                        </select>
+
+                        <input type="submit" name="op" id="searchSubmit" value="Search">
+                    </form>
+
+                    </div>
+
+                </div>
+                
+                <div class="clear"></div>
+                <!-- EOF Header Logo -->
+
+               
+                
+
+
+                 <!-- Breadcrumb -->
+                <div class="grid_16">
+                    <?
+                    $bc = $this->placeholder('breadcrumbs');
+                    $bc->setPrefix("<ul class='breadcrumb'>\n<li>")
+                        ->setSeparator("</li><li>\n")
+                        ->setIndent(0)
+                        ->setPostfix("</li></ul>\n");
+                    echo $bc;
+
+                    ?>
+                </div>
+                <div class="clear"></div>
+                <!-- EOF Breadcrumb -->
+   
+                <div class="grid_16"><br/></div>
+
+                <!-- Main Column -->
+                <div class="grid_16"> 
+                    <?= $this->layout()->content; ?>
+                </div>
+                <!-- EOF Main Column -->
+
+                <div class="clear"></div>
+
+                <div class="grid_16" id="site_info">
+                    <div class="box">
+                        <p><?= $this->translate('App_Name'); ?> <?= $this->translate('App_Version'); ?> <a href="http://<?= $this->translate('App_Url'); ?>"><?= $this->translate('App_Url'); ?></a>, <?=$this->translate('App_Licenses'); ?>                
+                    </div>
+                </div>
+             <div class="clear"></div>
+        </div>
+	</body>
+</html>
+               
+
+

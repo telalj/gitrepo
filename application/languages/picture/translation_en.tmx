@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Module'>
+        <tuv xml:lang="en"><seg>Picture</seg></tuv>
+    </tu>
+    
+    <tu tuid='Menu_Pictures'>
+        <tuv xml:lang="en"><seg>Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Delete_Pictures'>
+        <tuv xml:lang="en"><seg>Delete Picture</seg></tuv>
+    </tu>   
+    <tu tuid='Menu_Edit_Pictures'>
+        <tuv xml:lang="en"><seg>Edit Picture</seg></tuv>
+    </tu>  
+    <tu tuid='Menu_Add_Pictures'>
+        <tuv xml:lang="en"><seg>Add Picture</seg></tuv>
+    </tu>    
+    
+
+    <tu tuid='Box_Head_Delete_Pictures'>
+        <tuv xml:lang="en"><seg>Delete Picture</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Menu'>
+        <tuv xml:lang="en"><seg>Artist Menu</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Albums'>
+        <tuv xml:lang="en"><seg>Albums</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Edit_Pictures'>
+        <tuv xml:lang="en"><seg>Edit Picture</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Add_Pictures'>
+        <tuv xml:lang="en"><seg>Add Picture</seg></tuv>
+    </tu>
+    
+
+    <tu tuid='Field_Picture_Delete_Image_Dubmit'>
+        <tuv xml:lang="en"><seg>Delete</seg></tuv>
+    </tu>
+    <tu tuid='Field_Picture_Title'>
+        <tuv xml:lang="en"><seg>Picture Title</seg></tuv>
+    </tu>
+    <tu tuid='Field_Picture_Edit'>
+        <tuv xml:lang="en"><seg>Update</seg></tuv>
+    </tu>
+    <tu tuid='Field_Picture_Image'>
+        <tuv xml:lang="en"><seg>Upload Picture</seg></tuv>
+    </tu>
+    
+
+    <tu tuid='Error_Picture_Title_NotEmpty'>
+        <tuv xml:lang="en"><seg>The picture title is required!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Picture_Title_StringLength'>
+        <tuv xml:lang="en"><seg>The picture title must be 2 to 100 characters in length.</seg></tuv>
+    </tu>
+    <tu tuid='Error_Picture_image_IsImage'>
+        <tuv xml:lang="en"><seg>Only JPEG images allowed.</seg></tuv>
+    </tu>
+    
+    
+    
+
+     <tu tuid='Link_Artist_Home'>
+        <tuv xml:lang="en"><seg>Artist Home</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Rss'>
+        <tuv xml:lang="en"><seg>Artist RSS</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Api'>
+        <tuv xml:lang="en"><seg>Artist API</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Rss_All'>
+        <tuv xml:lang="en"><seg>All Artists</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Rss_New'>
+        <tuv xml:lang="en"><seg>New Artists</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Edit'>
+        <tuv xml:lang="en"><seg>Edit Artist</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Album'>
+        <tuv xml:lang="en"><seg>Add Album</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Art'>
+        <tuv xml:lang="en"><seg>Add Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add'>
+        <tuv xml:lang="en"><seg>Add Artist</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Play'>
+        <tuv xml:lang="en"><seg>Play</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_To_Playlist'>
+        <tuv xml:lang="en"><seg>Add To Playlist</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_More_Pictures'>
+        <tuv xml:lang="en"><seg>More Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_More'>
+        <tuv xml:lang="en"><seg>Artist Bio</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Events'>
+        <tuv xml:lang="en"><seg>Events</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Edit_Album'>
+        <tuv xml:lang="en"><seg>Edit Album</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Track'>
+        <tuv xml:lang="en"><seg>Add Track</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Edit_Track'>
+        <tuv xml:lang="en"><seg>Edit Track</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Delete_Image'>
+        <tuv xml:lang="en"><seg>Delete Image</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Picture'>
+        <tuv xml:lang="en"><seg>Add Image</seg></tuv>
+    </tu>
+    
+
+    
+    <tu tuid='Text_Picture_Delete_Complete'>
+        <tuv xml:lang="en"><seg>The image was removed.</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Delete_Image'>
+        <tuv xml:lang="en"><seg>Delete Picture</seg></tuv>
+    </tu>
+    <tu tuid='Text_Picture_Confirm_Delete'>
+        <tuv xml:lang="en"><seg>Are you sure you want to delete this picture?</seg></tuv>
+    </tu>
+    <tu tuid='Text_Picture_Confirm_Edit'>
+        <tuv xml:lang="en"><seg>Edit this picture.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Picture_Edit_Complete'>
+        <tuv xml:lang="en"><seg>The picture was updated.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Picture_Add_Complete'>
+        <tuv xml:lang="en"><seg>The image was added.</seg></tuv>
+    </tu>
+    
+    
+
+
+    </body>
+</tmx>

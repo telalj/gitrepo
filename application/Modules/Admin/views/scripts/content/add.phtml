@@ -1,0 +1,123 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Admin
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: add.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <?= $this->partial('content/menu.phtml'); ?>
+    
+    <?= $this->partial('content/search.phtml'); ?>
+
+    <?= $this->partial('content/add-help-en.phtml'); ?>    
+</div>
+
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Content_Create_New_Page');?></h2>
+        <div class="block" id="forms">
+            <?
+                if ( $this->form->getMessages() ) {
+                    echo '<fieldset style="border:solid 1px red; ">
+                        <legend><strong>Error</strong> Please review the following errors:</legend>
+                        <div style="color:red;padding:4px; line-height:18px;">';
+                    foreach ( $this->form->getMessages() as $key => $val) 
+                    {
+                        foreach ($val as $error => $message)
+                        {
+                            echo '<img src="/images/icons/flag_16.gif" alt="'.$this->translate('Error').'"> ' . $message . "<br>";
+                        }
+
+                    }
+                    echo "</div></fieldset><br>";
+                }
+            ?>
+
+            <form action="admin/content/add" method="post">
+                <fieldset>
+                    <legend><?= $this->translate('Form_Content_Page_Settings_Legend'); ?></legend>
+                    <!-- content_page -- >
+                    <p> <?= $this->form->content_page; ?></p>
+                    
+                    <!-- content_description_title -->
+                    <p><?= $this->form->content_description_title; ?></p>
+                
+                    <!-- content_description_text -->
+                    <p><?= $this->form->content_description_text; ?> </p>
+
+                    <div class="grid_8">
+                        <!-- content_in_menu -->
+                        <p><?= $this->form->content_in_menu;?></p>
+                    </div>
+
+                    <div class="grid_8">
+                        <!-- content_protected -->
+                        <p><?= $this->form->content_protected;?></p>
+                    </div>
+                    <div class="clear"></div>
+
+
+                    <div class="grid_8">
+                        <!-- content_parent_page -->
+                        <p><?= $this->form->content_parent_page; ?></p>
+                    </div>
+
+                    <div class="grid_8">
+                        <!-- content_layout -->
+                        <p><?= $this->form->content_layout; ?></p>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    
+                    <div class="grid_8">
+                        <!-- content_status -->
+                        <p><?= $this->form->content_status; ?></p>
+                    </div>
+                    <div class="grid_8">
+                        <!-- content_order -->
+                        <p><?= $this->form->content_order;?></p>
+                    </div>
+                
+                    <div class="clear"></div>
+
+                    <!-- content_allow_comment -->
+                    <p><?= $this->form->content_allow_comment; ?></p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><?= $this->translate('Form_Content_SEO_Settings_Legend');?></legend>
+
+                    <p><?= $this->form->content_description_meta_title; ?></p>
+    
+                    <!-- content_description_meta_description -->
+                    <p><?= $this->form->content_description_meta_description; ?></p>
+
+                    <!-- content_description_keyword -->
+                    <p><?= $this->form->content_description_keyword; ?></p>
+            
+                    <p><?= $this->form->submit; ?><?= $this->form->no_csr; ?></p>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</div>

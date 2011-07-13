@@ -1,0 +1,366 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Meta_Admin_Account_Title'>
+        <tuv xml:lang="en"><seg>Accounts</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Add_Title'>
+        <tuv xml:lang="en"><seg>Add Account</seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Account_Edit_Title'>
+        <tuv xml:lang="en"><seg>Edit Account</seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Account_Suspend_Title'>
+        <tuv xml:lang="en"><seg>Suspend Account</seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Account_Search_Title'>
+        <tuv xml:lang="en"><seg>Search For Account</seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Account_Email_Title'>
+        <tuv xml:lang="en"><seg>Email Account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Password_Title'>
+        <tuv xml:lang="en"><seg>Reset Account Password</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_View_Title'>
+        <tuv xml:lang="en"><seg>View Account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Address_Title'>
+        <tuv xml:lang="en"><seg>Edit Address</seg></tuv>
+    </tu>
+    
+
+    <!-- Box Heads --> 
+    <tu tuid='Box_Head_Account_Menu'>
+        <tuv xml:lang="en"><seg>Accounts</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Account_Search'>
+        <tuv xml:lang="en"><seg>Accounts Search</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Account_Customers'>
+        <tuv xml:lang="en"><seg>All Accounts</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Account_Error'>
+        <tuv xml:lang="en"><seg>Account Error</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Account_Details'>
+        <tuv xml:lang="en"><seg>Account Details</seg></tuv>
+    </tu>     
+    <tu tuid='Box_Head_Account_Billing_Address'>
+        <tuv xml:lang="en"><seg>Billing Address</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Account_Shipping_Address'>
+        <tuv xml:lang="en"><seg>Shipping Address</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Recent_Orders'>
+        <tuv xml:lang="en"><seg>Recent Orders</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Edit'>
+        <tuv xml:lang="en"><seg>Edit Account</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Address'>
+        <tuv xml:lang="en"><seg>Edit Address</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Add'>
+        <tuv xml:lang="en"><seg>Create New Account</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Password'>
+        <tuv xml:lang="en"><seg>Reset Password</seg></tuv>
+    </tu>
+    
+    
+  
+    <!-- Table Heads -->
+
+
+    <!-- Menu -->
+    <tu tuid='Menu_Admin_Account'>
+        <tuv xml:lang="en"><seg>Accounts</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Account_Index'>
+        <tuv xml:lang="en"><seg>View</seg></tuv>
+    </tu>
+
+    <tu tuid='Menu_Admin_Account_Add'>
+        <tuv xml:lang="en"><seg>Add Account</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Search'>
+        <tuv xml:lang="en"><seg>Account Search</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Account_Edit'>
+        <tuv xml:lang="en"><seg>Edit Account</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Account_Suspend'>
+        <tuv xml:lang="en"><seg>Suspend Account</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Account_Password'>
+        <tuv xml:lang="en"><seg>Reset Account Password</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Account_Email'>
+        <tuv xml:lang="en"><seg>Email Customer</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Account_View'>
+        <tuv xml:lang="en"><seg>View Account</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Account_Address'>
+        <tuv xml:lang="en"><seg>Edit Address</seg></tuv>
+    </tu>
+    
+       
+   
+    
+    
+
+    <!-- Forms -->
+    <tu tuid='Form_Account_Button_Search'>
+        <tuv xml:lang="en"><seg>Search</seg></tuv>
+    </tu>      
+    <tu tuid='Form_Account_Edit_Legend'>
+        <tuv xml:lang="en"><seg><strong>Edit Your Account Details</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>   
+    <tu tuid='Form_Account_Address_Billing_Legend'>
+        <tuv xml:lang="en"><seg><strong>Customers Billing Address</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>   
+    <tu tuid='Form_Account_Address_Shipping_Legend'>
+        <tuv xml:lang="en"><seg><strong>Customers Shipping Address</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>    
+    <tu tuid='Form_Account_Password_Legend'>
+        <tuv xml:lang="en"><seg><strong>Change Customers Password</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>    
+    <tu tuid='Form_Account_Email_Legend'>
+        <tuv xml:lang="en"><seg><strong>Customers News Letters</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Personal'>
+        <tuv xml:lang="en"><seg>Personal Information</seg></tuv>
+    </tu>  
+    <tu tuid='Form_Legend_Account_Phone'>
+        <tuv xml:lang="en"><seg>Telephone</seg></tuv>
+    </tu>    
+    <tu tuid='Form_Legend_Account_Address'>
+        <tuv xml:lang="en"><seg>Address</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Login'>
+        <tuv xml:lang="en"><seg>Login</seg></tuv>
+    </tu>   
+    <tu tuid='Form_Legend_Account_News_Letters'>
+        <tuv xml:lang="en"><seg>News Letters</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Email'>
+        <tuv xml:lang="en"><seg>Email Settings</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Reset_Password'>
+        <tuv xml:lang="en"><seg>New Password</seg></tuv>
+    </tu>
+    
+    <!-- Fields -->
+    <tu tuid='Field_Account_Id'>
+        <tuv xml:lang="en"><seg>ID</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Name'>
+        <tuv xml:lang="en"><seg>Name</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email'>
+        <tuv xml:lang="en"><seg>Email</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Type'>
+        <tuv xml:lang="en"><seg>Type</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Status'>
+        <tuv xml:lang="en"><seg>Status</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Username'>
+        <tuv xml:lang="en"><seg>Username</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Firstname'>
+        <tuv xml:lang="en"><seg>First Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Lastname'>
+        <tuv xml:lang="en"><seg>Last Name</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Address'>
+        <tuv xml:lang="en"><seg>Email Address</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Please provide a valid Email address as we will use this address to send important messages about your account. We do not share your email with any third party companies.</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Telephone'>
+        <tuv xml:lang="en"><seg>Telephone</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Alt_Telephone'>
+        <tuv xml:lang="en"><seg>Fax</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Email_Type'>
+        <tuv xml:lang="en"><seg>Email Format</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Receive_Email'>
+        <tuv xml:lang="en"><seg>Receive Email</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Receive_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Checking this box will allow us to send you email news about our company.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Type_Descrp'>
+        <tuv xml:lang="en"><seg>Specifiy the email format that we will send you.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Last_Login'>
+        <tuv xml:lang="en"><seg>Last Login</seg></tuv>
+    </tu>
+    <tu tuid='Field_Login_Ip'>
+        <tuv xml:lang="en"><seg>IP Address</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Shipping_Address_Name'>
+        <tuv xml:lang="en"><seg>Addres Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Street'>
+        <tuv xml:lang="en"><seg>Street Address</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Street2'>
+        <tuv xml:lang="en"><seg>Street Address Cont</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_City'>
+        <tuv xml:lang="en"><seg>City</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Postal'>
+        <tuv xml:lang="en"><seg>Postal Code</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Geo_Zone'>
+        <tuv xml:lang="en"><seg>State/Province</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Name'>
+        <tuv xml:lang="en"><seg>Billing Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Street'>
+        <tuv xml:lang="en"><seg>Billing Street</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Street2'>
+        <tuv xml:lang="en"><seg>Billing Street Cont</seg></tuv>
+    </tu>       
+    <tu tuid='Field_Account_Billing_Address_City'>
+        <tuv xml:lang="en"><seg>Billing City</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Postal'>
+        <tuv xml:lang="en"><seg>Billing Postal Code</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Geo_Zone'>
+        <tuv xml:lang="en"><seg>Billing State/ Province</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Submit'>
+        <tuv xml:lang="en"><seg>Save Address</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Password'>
+        <tuv xml:lang="en"><seg>Password</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Vfry_Password'>
+        <tuv xml:lang="en"><seg>Verify Password</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Password_Submit'>
+        <tuv xml:lang="en"><seg>Save Password</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Login_Submit'>
+        <tuv xml:lang="en"><seg>Sign In</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Submit'>
+        <tuv xml:lang="en"><seg>Save Customer Details</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Register_Submit'>
+        <tuv xml:lang="en"><seg>Register</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Register_Submit'>
+        <tuv xml:lang="en"><seg>Register</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Email_Type_Text'>
+        <tuv xml:lang="en"><seg>Text</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Type_HTML'>
+        <tuv xml:lang="en"><seg>HTML</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Status_Pending'>
+        <tuv xml:lang="en"><seg>Pending</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Status_Active'>
+        <tuv xml:lang="en"><seg>Active</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Status_Suspended'>
+        <tuv xml:lang="en"><seg>Suspended</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Type_Guest'>
+        <tuv xml:lang="en"><seg>Guest</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Type_Member'>
+        <tuv xml:lang="en"><seg>Member</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Type_Administrator'>
+        <tuv xml:lang="en"><seg>Administrator</seg></tuv>
+    </tu>
+
+    <!-- Error -->   
+    <tu tuid='Error_Account_Missing_Shipping_Address_Name_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Shipping_Address_Street_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Shipping_Address_City_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Shipping_Address_Postal_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Missing_Billing_Address_Name_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Billing_Address_Street_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Billing_Address_City_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Billing_Address_Postal_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Password_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Missing_Vfry_Password_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Missing_Username_Field'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu> 
+    <tu tuid='Error_Account_Username_StringLength'>
+        <tuv xml:lang="en"><seg>Username should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>
+
+    <!-- Text -->
+    <tu tuid='Text_Account_Keyword_Search'>
+        <tuv xml:lang="en"><seg>Customer Search</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Not_Found'>
+        <tuv xml:lang="en"><seg>The Account could not be found.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Address_Comlete'>
+        <tuv xml:lang="en"><seg>The customers address was updated.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Edit_Comlete'>
+        <tuv xml:lang="en"><seg>The customers details where updated.</seg></tuv>
+    </tu>
+    
+
+    <!-- Links -->
+    <tu tuid='Link_Account_Edit'>
+        <tuv xml:lang="en"><seg>Edit</seg></tuv>
+    </tu>
+    <tu tuid='Link_Account_Password'>
+        <tuv xml:lang="en"><seg>Reset Password</seg></tuv>
+    </tu>
+    <tu tuid='Link_Account_Orders'>
+        <tuv xml:lang="en"><seg>Orders</seg></tuv>
+    </tu>
+    <tu tuid='Link_Back_To_Customer'>
+        <tuv xml:lang="en"><seg>Back To Customer</seg></tuv>
+    </tu>
+        
+    
+    </body>
+</tmx>

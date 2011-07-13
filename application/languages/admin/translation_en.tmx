@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Module_Admin_Title'>
+        <tuv xml:lang="en"><seg>Admin</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Admin_Index_Title'>
+        <tuv xml:lang="en"><seg>Admin</seg></tuv>
+    </tu>
+    
+    <!-- Menu -->
+    <tu tuid='Menu_Admin'>
+        <tuv xml:lang="en"><seg>Admin</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Index'>
+        <tuv xml:lang="en"><seg>Home</seg></tuv>
+    </tu>   
+    <tu tuid='Menu_My_Store'>
+        <tuv xml:lang="en"><seg>My Store</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Configuration'>
+        <tuv xml:lang="en"><seg>Configuration</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Catalog'>
+        <tuv xml:lang="en"><seg>Catalog</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Modules'>
+        <tuv xml:lang="en"><seg>Modules</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Customers'>
+        <tuv xml:lang="en"><seg>Accounts</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Localization'>
+        <tuv xml:lang="en"><seg>Localization</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Reports'>
+        <tuv xml:lang="en"><seg>Reports</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Tools'>
+        <tuv xml:lang="en"><seg>Tools</seg></tuv>
+    </tu>   
+    <tu tuid='Menu_Catelog'>
+        <tuv xml:lang="en"><seg>Front End</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Orders'>
+        <tuv xml:lang="en"><seg>Orders</seg></tuv>
+    </tu>   
+    <tu tuid='Menu_Content_Manager'>
+        <tuv xml:lang="en"><seg>Content Manager</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Import'>
+        <tuv xml:lang="en"><seg>Import</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Import_Genre'>
+        <tuv xml:lang="en"><seg>Import Genre</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Import_Directory'>
+        <tuv xml:lang="en"><seg>Import Media Directory</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Import_Upload'>
+        <tuv xml:lang="en"><seg>Upload Music</seg></tuv>
+    </tu>
+    
+    
+    
+
+    <!-- Configure Menu -->
+    <tu tuid='Menu_Configure_My_Store'>
+        <tuv xml:lang="en"><seg>Configure VooDoo</seg></tuv>
+    </tu>   
+    <tu tuid='Menu_Configure_Modules'>
+        <tuv xml:lang="en"><seg>Modules</seg></tuv>
+    </tu>  
+    <tu tuid='Menu_Configure_Boxes'>
+        <tuv xml:lang="en"><seg>Box Controller</seg></tuv>
+    </tu>   
+    <tu tuid='Menu_Configure_Google_Base'>
+        <tuv xml:lang="en"><seg>Google Base</seg></tuv>
+    </tu>   
+    <tu tuid='Menu_Configure_RSS_Feeds'>
+        <tuv xml:lang="en"><seg>Rss Feeds</seg></tuv>
+    </tu>
+    
+    <tu tuid='Menu_Attribute_Sets'>
+        <tuv xml:lang="en"><seg>Attribute Sets</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Attributes'>
+        <tuv xml:lang="en"><seg>Attributes</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Categories'>
+        <tuv xml:lang="en"><seg>Categories</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Products'>
+        <tuv xml:lang="en"><seg>Products</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Manufactures'>
+        <tuv xml:lang="en"><seg>Manufactures</seg></tuv>
+    </tu>
+    
+    <tu tuid='Menu_Countries'>
+        <tuv xml:lang="en"><seg>Countries</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Zones'>
+        <tuv xml:lang="en"><seg>Zones</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Tax_Classes'>
+        <tuv xml:lang="en"><seg>Tax Classes</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Tax_Rates'>
+        <tuv xml:lang="en"><seg>Tax Rates</seg></tuv>
+    </tu>
+    
+    <tu tuid='Menu_Group_Pricing'>
+        <tuv xml:lang="en"><seg>Group Pricing</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Discount_Pricing'>
+        <tuv xml:lang="en"><seg>Discount Pricing</seg></tuv>
+    </tu>
+    
+    
+    <tu tuid='Menu_News_Manager'>
+        <tuv xml:lang="en"><seg>News Manager</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Blog_Manager'>
+        <tuv xml:lang="en"><seg>Blog Manager</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Contacts'>
+        <tuv xml:lang="en"><seg>Contacts</seg></tuv>
+    </tu>
+
+    <tu tuid='Field_Language_En'>
+        <tuv xml:lang="en"><seg>English</seg></tuv>
+    </tu>
+    
+    <tu tuid='Head_Statistics'>
+        <tuv xml:lang="en"><seg>Stats</seg></tuv>
+    </tu>
+    
+    
+    <tu tuid='Text_Admin_Artist_Count'>
+        <tuv xml:lang="en"><seg>Total Artists</seg></tuv>
+    </tu>   
+    <tu tuid='Text_Admin_Album_Count'>
+        <tuv xml:lang="en"><seg>Total Albums</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Admin_File_Count'>
+        <tuv xml:lang="en"><seg>Total Tracks</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Admin_Account_Count'>
+        <tuv xml:lang="en"><seg>Total Accounts</seg></tuv>
+    </tu>
+
+
+    <!-- Box Heads -->
+
+
+
+
+</body>
+</tmx>

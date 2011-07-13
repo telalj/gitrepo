@@ -1,0 +1,69 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Admin
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <?= $this->partial('account/menu.phtml'); ?>
+    <?= $this->partial('account/search-box.phtml'); ?>
+</div>
+
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Account_Customers');?></h2>
+        <div class="block">
+            <table>
+                <tr>
+                    <th><?= $this->translate('Field_Account_Id'); ?></th>
+                    <th><?= $this->translate('Field_Account_Name'); ?></th>
+                    <th><?= $this->translate('Field_Account_Email'); ?></th>
+                    <th><?= $this->translate('Field_Account_Type'); ?></th>
+                    <th><?= $this->translate('Field_Account_Status'); ?></th>
+                </tr>
+                <? if (count($this->paginator)): ?>
+                <? foreach ($this->paginator as $item): ?>
+                <tr>
+                    <td><a href="admin/account/view/account_id/<?= $item['account_id'];?>"><?= $item['account_id']; ?></a></td>
+                    <td><?= $item['account_firstname']; ?> <?= $item['account_lastname']; ?><br>
+                        <a href="admin/account/edit/account_id/<?= $item['account_id'];?>"><?= $this->translate('Link_Account_Edit'); ?></a> |
+                        <a href="admin/account/password/account_id/<?= $item['account_id'];?>"><?= $this->translate('Link_Account_Password'); ?></a> |
+                        <a href="admin/order/account/account_id/<?= $item['account_id'];?>"><?= $this->translate('Link_Account_Orders'); ?></a>
+                    </td>
+                    <td><a href="admin/account/email/account_id/<?= $item['account_id'];?>"><?= $item['account_email']; ?></a></td>
+                    <td><?= $item['account_type']; ?></td>
+                    <td>    
+                    <? if ($item['account_status'] == 'Active'): ?>
+                        <a href="admin/account/suspend/account_id/<?= $item['account_id']; ?>"><?= $item['account_status']; ?></a>
+                    <? else: ?>
+                        <a href="admin/account/activate/account_id/<?= $item['account_id']; ?>"><?= $item['account_status']; ?></a>
+                    <? endif;?>
+
+                    </td>
+                </tr>
+                <? endforeach; ?>
+                <? endif; ?>
+        
+
+            </table>
+            <?= $this->paginationControl($this->paginator, 'Sliding', 'pagination_control.phtml'); ?>
+            <br>
+        </div>
+    </div>
+</div>

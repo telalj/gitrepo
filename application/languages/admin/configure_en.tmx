@@ -1,0 +1,297 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+    <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+    <body>
+    <tu tuid='Moudle_Configure_Name'>
+        <tuv xml:lang="en"><seg>Configure</seg></tuv>
+    </tu>
+
+    <!-- Meta Tags -->
+    <tu tuid='Meta_Admin_Configure_Title'>
+        <tuv xml:lang="en"><seg>Configure</seg></tuv>
+    </tu>
+    
+    <!-- Menu -->
+    <tu tuid='Menu_Admin_Configure'>
+        <tuv xml:lang="en"><seg>Configuration</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Admin_Configure_My-store'>
+        <tuv xml:lang="en"><seg>My App</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Admin_Configure_Modules'>
+        <tuv xml:lang="en"><seg>Modules</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Admin_Configure_Boxes'>
+        <tuv xml:lang="en"><seg>Box Controller</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-default'>
+        <tuv xml:lang="en"><seg>Configure Default Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-account'>
+        <tuv xml:lang="en"><seg>Configure Account Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-admin'>
+        <tuv xml:lang="en"><seg>Configure Admin Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-artist'>
+        <tuv xml:lang="en"><seg>Configure Artist Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-album'>
+        <tuv xml:lang="en"><seg>Configure Album Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-Content'>
+        <tuv xml:lang="en"><seg>Configure Content Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-genre'>
+        <tuv xml:lang="en"><seg>Configure Genre Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Modules-complete'>
+        <tuv xml:lang="en"><seg>Configure Genre Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-search'>
+        <tuv xml:lang="en"><seg>Configure Search Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-file'>
+        <tuv xml:lang="en"><seg>Configure File Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-play'>
+        <tuv xml:lang="en"><seg>Configure Play Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-picture'>
+        <tuv xml:lang="en"><seg>Configure Picture Module</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Admin_Configure_Edit-module-install'>
+        <tuv xml:lang="en"><seg>Configure Install Module</seg></tuv>
+    </tu>
+    
+
+    <!-- Box Heads -->    
+    <tu tuid='Box_Head_Configure_Menu'>
+        <tuv xml:lang="en"><seg>Configure Menu</seg></tuv>
+    </tu>    
+    <tu tuid='Box_Head_Configure_My_Store'>
+        <tuv xml:lang="en"><seg>Configure My App</seg></tuv>
+    </tu>   
+    <tu tuid='Box_Head_Configure_Modules'>
+        <tuv xml:lang="en"><seg>Configure Modules</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Boxes'>
+        <tuv xml:lang="en"><seg>Box Controller</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Account'>
+        <tuv xml:lang="en"><seg>Configure Account Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Default'>
+        <tuv xml:lang="en"><seg>Configure Default Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Admin'>
+        <tuv xml:lang="en"><seg>Configure Admin Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Artist'>
+        <tuv xml:lang="en"><seg>Configure Artist Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Album'>
+        <tuv xml:lang="en"><seg>Configure Album Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Content'>
+        <tuv xml:lang="en"><seg>Configure Content Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Genre'>
+        <tuv xml:lang="en"><seg>Configure Genre Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Index'>
+        <tuv xml:lang="en"><seg>Main Configuration</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_Search'>
+        <tuv xml:lang="en"><seg>Configure Search Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Modules_File'>
+        <tuv xml:lang="en"><seg>Configure File Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Play_File'>
+        <tuv xml:lang="en"><seg>Configure Play Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Module_Picture'>
+        <tuv xml:lang="en"><seg>Configure Picture Module</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Configure_Module_Install'>
+        <tuv xml:lang="en"><seg>Configure Install Module</seg></tuv>
+    </tu>
+    
+    <!-- Fields -->   
+    <tu tuid='Field_Module_Enabled'>
+        <tuv xml:lang="en"><seg>Module Enabled</seg></tuv>
+    </tu>
+    <tu tuid='Field_Layout'>
+        <tuv xml:lang="en"><seg>Module Layout</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Cache_Enabled'>
+        <tuv xml:lang="en"><seg>Cache Enabled</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Cache_Lifetime'>
+        <tuv xml:lang="en"><seg>Cache Lifetime</seg></tuv>
+    </tu>
+    <tu tuid='Field_Cache_Serialization'>
+        <tuv xml:lang="en"><seg>Cache Serialization</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Per_Page'>
+        <tuv xml:lang="en"><seg>Items Per Page</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Page_Range'>
+        <tuv xml:lang="en"><seg>Page Range</seg></tuv>
+    </tu>
+    <tu tuid='Field_Configure_Submit'>
+        <tuv xml:lang="en"><seg>Update</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Enabled_Yes'>
+        <tuv xml:lang="en"><seg>Yes</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Enabled_No'>
+        <tuv xml:lang="en"><seg>No</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Layout_1_Column'>
+        <tuv xml:lang="en"><seg>1 Column</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Layout_2_Column_L'>
+        <tuv xml:lang="en"><seg>2 Column L Menu</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Layout_2_Column_R'>
+        <tuv xml:lang="en"><seg>2 Column R Menu</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Layout_3_Column'>
+        <tuv xml:lang="en"><seg>3 Column</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Register'>
+        <tuv xml:lang="en"><seg>Registration Type</seg></tuv>
+    </tu>
+    <tu tuid='Field_Register_Open'>
+        <tuv xml:lang="en"><seg>No Verification</seg></tuv>
+    </tu>
+    <tu tuid='Field_Register_Invite'>
+        <tuv xml:lang="en"><seg>Invite Only</seg></tuv>
+    </tu>
+    <tu tuid='Field_Register_Verify'>
+        <tuv xml:lang="en"><seg>Email Verification</seg></tuv>
+    </tu>
+    <tu tuid='Field_Module_API'>
+        <tuv xml:lang="en"><seg>Module Soap API Enabled</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Module_RSS'>
+        <tuv xml:lang="en"><seg>Module RSS Enabled</seg></tuv>
+    </tu>
+    <tu tuid='Field_Configure_Email_Type'>
+        <tuv xml:lang="en"><seg>Email Delivery</seg></tuv>
+    </tu> 
+    <tu tuid='Field_Configure_Email_From_Email'>
+        <tuv xml:lang="en"><seg>Email From Address</seg></tuv>
+    </tu> 
+    <tu tuid='Field_Configure_Email_From_Name'>
+        <tuv xml:lang="en"><seg>Email From Name</seg></tuv>
+    </tu>
+        <tu tuid='Field_Configure_Email_User'>
+        <tuv xml:lang="en"><seg>SMTP Auth User</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Configure_Email_Pass'>
+        <tuv xml:lang="en"><seg>SMTP Auth Password</seg></tuv>
+    </tu> 
+     <tu tuid='Field_Configure_Email_Host'>
+        <tuv xml:lang="en"><seg>SMTP Auth Host</seg></tuv>
+    </tu> 
+    <tu tuid='Field_Configure_Email_Admin'>
+        <tuv xml:lang="en"><seg>Admin Email Address</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Configure_Date_Format'>
+        <tuv xml:lang="en"><seg>Date Format</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Configure_Time_Format'>
+        <tuv xml:lang="en"><seg>Date Time Format</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Configure_lastFMKey'>
+        <tuv xml:lang="en"><seg>Last.FM Api Key</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Configure_downLoadImages'>
+        <tuv xml:lang="en"><seg>Download Images From Last.FM</seg></tuv>
+    </tu>
+    <tu tuid='Field_Guest_Acl'>
+        <tuv xml:lang="en"><seg>Guest</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Member_Acl'>
+        <tuv xml:lang="en"><seg>Member</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Power_Member_Acl'>
+        <tuv xml:lang="en"><seg>Power Member</seg></tuv>
+    </tu>
+    <tu tuid='Field_No_Permisions'>
+        <tuv xml:lang="en"><seg>No Permisions</seg></tuv>
+    </tu>
+    <tu tuid='Field_View'>
+        <tuv xml:lang="en"><seg>View</seg></tuv>
+    </tu>
+    <tu tuid='Field_View_Create'>
+        <tuv xml:lang="en"><seg>View, Create</seg></tuv>
+    </tu>
+    <tu tuid='Field_View_Create_Update'>
+        <tuv xml:lang="en"><seg>View, Create, Update</seg></tuv>
+    </tu>
+    <tu tuid='Field_View_Create_Update_Delete'>
+        <tuv xml:lang="en"><seg>View, Create, Update, Delete</seg></tuv>
+    </tu>
+    <tu tuid='Field_View_Create_Update_Delete_Admin'>
+        <tuv xml:lang="en"><seg>View, Create, Update, Delete, Admin</seg></tuv>
+    </tu>
+    
+    
+    <!-- Forms -->    
+    <tu tuid='Form_Legend_Module'>
+        <tuv xml:lang="en"><seg>Module Set Up</seg></tuv>
+    </tu>    
+    <tu tuid='Form_Legend_Cache'>
+        <tuv xml:lang="en"><seg>Caching</seg></tuv>
+    </tu>    
+    <tu tuid='Form_Legend_Pagination'>
+        <tuv xml:lang="en"><seg>Pagination</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Email'>
+        <tuv xml:lang="en"><seg>Email Settings</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Date_Format'>
+        <tuv xml:lang="en"><seg>Date Settings</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Last_FM'>
+        <tuv xml:lang="en"><seg>Last.FM Settings</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_ACL'>
+        <tuv xml:lang="en"><seg>Site Permissions</seg></tuv>
+    </tu>
+    
+
+    <!-- Errors -->    
+    <tu tuid='Error_Cache_Lifetime_NotEmpty'>
+        <tuv xml:lang="en"><seg>Cache Lifetime is required!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Cache_Lifetime_Int'>
+        <tuv xml:lang="en"><seg>Cache Lifetime must be a whole integer!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Per_Page_NotEmpty'>
+        <tuv xml:lang="en"><seg>Per Page is required!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Per_Page_Int'>
+        <tuv xml:lang="en"><seg>Per Page must be a whole integer!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Page_Range_NotEmpty'>
+        <tuv xml:lang="en"><seg>Page Range is Required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Page_Range_Int'>
+        <tuv xml:lang="en"><seg>Page Range must be a whole integer</seg></tuv>
+    </tu>
+
+    <!-- Links -->
+
+    <!-- Text -->
+    <tu tuid='Text_Configure_No_Options_To_Configure'>
+        <tuv xml:lang="en"><seg>There are no options to configure for this module.</seg></tuv>
+    </tu>
+    
+    </body>
+</tmx>

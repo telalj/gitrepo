@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Meta_Default_Index_Title'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box - Home</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Default_Error_Title'>
+        <tuv xml:lang="en"><seg>Error</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Default_Index_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Web Juke Box</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Default_Index_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo, Music, Box, Web, Juke, Box, MP3,</seg></tuv>
+    </tu>
+    
+    
+    <tu tuid='Field_Default_Artist'>
+        <tuv xml:lang="en"><seg>Artist</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Default_Album'>
+        <tuv xml:lang="en"><seg>Album</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Default_Genre'>
+        <tuv xml:lang="en"><seg>Genre</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Default_Search'>
+        <tuv xml:lang="en"><seg>Search</seg></tuv>
+    </tu>
+
+
+    <!-- Menus -->
+    <tu tuid='Menu_Home'>
+        <tuv xml:lang="en"><seg>Home</seg></tuv>
+    </tu> 
+    <tu tuid='Menu_Artist'>
+        <tuv xml:lang="en"><seg>Artist</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Album'>
+        <tuv xml:lang="en"><seg>Album</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Genre'>
+        <tuv xml:lang="en"><seg>Genre</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account'>
+        <tuv xml:lang="en"><seg>My Account</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Logout'>
+        <tuv xml:lang="en"><seg>Sign Out</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Login'>
+        <tuv xml:lang="en"><seg>Sign In</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Default_Index'>
+        <tuv xml:lang="en"><seg> </seg></tuv>
+    </tu> 
+    <tu tuid='Menu_Admin'>
+        <tuv xml:lang="en"><seg>Admin</seg></tuv>
+    </tu> 
+    <tu tuid='Menu_Install_Index_'>
+        <tuv xml:lang="en"><seg> </seg></tuv>
+    </tu> 
+    <tu tuid='Menu_Default_Error_Artist-not-found'>
+        <tuv xml:lang="en"><seg>Artist Not Found</seg></tuv>
+    </tu> 
+    <tu tuid='Menu_Default_Error_Album-not-found'>
+        <tuv xml:lang="en"><seg>Album Not Found</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Default_Error_Error'>
+        <tuv xml:lang="en"><seg>Error</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Default_Error_Access-denied'>
+        <tuv xml:lang="en"><seg>Access Denied</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Default_Error_Artist-image-not-found'>
+        <tuv xml:lang="en"><seg>Artist Image Not Found</seg></tuv>
+    </tu>
+    
+    
+    
+    <!-- Box Heads -->
+    <tu tuid='Box_Head_Whats_Playing'>
+        <tuv xml:lang="en"><seg>Top Played Artists</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_New_Artists'>
+        <tuv xml:lang="en"><seg>New Artists</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_New_Albums'>
+        <tuv xml:lang="en"><seg>New Albums</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Error_Artist_Not_Found'>
+        <tuv xml:lang="en"><seg>Artist Not Found</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Top_Played'>
+        <tuv xml:lang="en"><seg>Top Played</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Error_Album_Not_Found'>
+        <tuv xml:lang="en"><seg>Album Not Found</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Error_Access_Denied'>
+        <tuv xml:lang="en"><seg>Access Denied</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Error_Artist_Image-Not_Found'>
+        <tuv xml:lang="en"><seg>Artist Picture Not Found</seg></tuv>
+    </tu>  
+    
+
+    <tu tuid='Link_Back_To_Artist'>
+        <tuv xml:lang="en"><seg>Back To Artist</seg></tuv>
+    </tu>
+    
+    
+
+    <tu tuid='App_Name'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box</seg></tuv>
+    </tu>
+    <tu tuid='App_Version'>
+        <tuv xml:lang="en"><seg>Version 1.0.39</seg></tuv>
+    </tu>
+    <tu tuid='App_Url'>
+        <tuv xml:lang="en"><seg>www.voodoomusicbox.com</seg></tuv>
+    </tu>
+    
+    <tu tuid='Paginator_Previous'>
+        <tuv xml:lang="en"><seg>Previous</seg></tuv>
+    </tu>
+    <tu tuid='Paginator_Next'>
+        <tuv xml:lang="en"><seg>Next</seg></tuv>
+    </tu>
+    
+    <tu tuid='Txt_Error_Artist_Not_Found'>
+        <tuv xml:lang="en"><seg>Sorry, but we could not find the artist </seg></tuv>
+    </tu>
+    <tu tuid='Txt_Error_Album_Not_Found'>
+        <tuv xml:lang="en"><seg>Sorry, but we could not find the album </seg></tuv>
+    </tu>
+    <tu tuid='Txt_Error_Artist_Image-Not_Found'>
+        <tuv xml:lang="en"><seg>Sorry, but we could not find the artists picture </seg></tuv>
+    </tu>
+    
+    <tu tuid='Text_Default_Number_Plays'>
+        <tuv xml:lang="en"><seg>Plays</seg></tuv>
+    </tu>
+    <tu tuid='Text_Default_Date_Added'>
+        <tuv xml:lang="en"><seg>Added</seg></tuv>
+    </tu>
+    <tu tuid='Text_Default_No_Top_Played'>
+        <tuv xml:lang="en"><seg>Nothing has been played.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Default_Albums'>
+        <tuv xml:lang="en"><seg>Albums</seg></tuv>
+    </tu>
+    <tu tuid='Text_Default_Tracks'>
+        <tuv xml:lang="en"><seg>Tracks</seg></tuv>
+    </tu>
+    <tu tuid='Text_Default_Play_Time'>
+        <tuv xml:lang="en"><seg>Play Time</seg></tuv>
+    </tu>
+    <tu tuid='Text_Default_Added'>
+        <tuv xml:lang="en"><seg>Added</seg></tuv>
+    </tu>
+    <tu tuid='Text_Default_Artist'>
+        <tuv xml:lang="en"><seg>Artist</seg></tuv>
+    </tu>
+    
+    
+    
+
+    <tu tuid='Link_Error_Login'>
+        <tuv xml:lang="en"><seg>You must Sign In to access the resource you requested.</seg></tuv>
+    </tu>
+    
+
+</body>
+</tmx>

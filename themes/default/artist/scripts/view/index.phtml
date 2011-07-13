@@ -1,0 +1,274 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Artist
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->action('artist', 'box', '', array('artist_id' => $this->artist['artist_id'], 'name' => $this->artist['artist'], 'album' => $this->album['title'], 'track' => $this->track['title'])  ); ?>
+
+<div class="grid_12">
+
+    <div class="box">
+        <h2><?= $this->artist['artist']; ?></h2>
+
+        <div class="block">
+            <!-- Image -->
+            <div class="grid_4">
+                <div id="lb-one">
+                    <? if (is_file(Zend_Registry::get('siteRootDir') . $this->artist['image'])): ?>
+                        <a href="<?= $this->artist['image']; ?>" dojoType="dojox.image.Lightbox" title="<?= $this->artist['artist']; ?>"><img  src="<?= $this->artist['image']; ?>" border="0" alt="<?= $this->artist['artist']; ?>"></a>
+                    <? else: ?>
+                        <img src="images/no_image_170.gif" alt="<?= $this->artist['artist']; ?>" width="126" border="0">
+                    <? endif; ?>
+                </div>
+                <br>                
+            </div>
+
+            <!-- Play Controls -->
+            <div class="grid_6">
+                <?  $tracks ='';
+                    if($this->playedTracks):
+                        foreach($this->playedTracks as $track):
+                            $tracks .= $track['file_id'] .':';
+                        endforeach; 
+                    elseif($this->albumTracks): 
+                        foreach($this->albumTracks as $track):
+                            $tracks .= $track['file_id'] .':';
+                        endforeach;
+                    else:
+                        $tracks = $this->track['file_id'] .':';
+                    endif; ?>
+
+                <p><a href="javascript:playAllTracks('<?= $tracks; ?>');" title="<?= $this->translate('Link_Artist_Play'); ?>"><img src="images/playbig.gif" alt="<?= $this->translate('Link_Artist_Play'); ?>" border="0"></a> <a href="" title="<?= $this->translate('Link_Artist_Add_To_Playlist'); ?>"><img src="images/btn_add_pl.gif" alt="<?= $this->translate('Link_Artist_Add_To_Playlist'); ?>" border="0"></a> <?= $this->translate('Text_Artist_Play_Add'); ?></p>
+                
+                <h4 id="btn1"><a href="artist/view/<?= urlencode($this->artist['artist']); ?>" title="<?= $this->artist['artist']; ?>"><?= $this->artist['artist']; ?></a></h4> 
+                <div dojoType="dijit.Menu" id="popup1campus" contextMenuForWindow="false" style="display: none;" targetNodeIds="btn1">
+                  <div dojoType="dijit.MenuItem" onclick="dijit.byId('dialog1').show()">Cut</div>
+                  <div dojoType="dijit.MenuItem" onClick="javascript:playAllTracks('<?= $tracks; ?>');">Play Now</div>
+                  <div dojoType="dijit.MenuItem"  onClick="doNothing();">Paste</div>  
+                </div>
+                
+                <div dojoType="dijit.Dialog" id="dialog1" title="First Dialog" execute="alert('submitted w/args:\n' + dojo.toJson(arguments[0], true));">
+                  <table>
+                    <tr>
+                      <td><label for="name">Name: </label></td>
+                      <td><input dojoType="dijit.form.TextBox" type="text" name="name" id="name" value="<?= $this->artist['artist']; ?>"></td>
+                    </tr><tr>
+                      <td colspan="2" align="center">
+                        <button dojoType="dijit.form.Button" type="submit">OK</button></td>
+                    </tr>                    
+                  </table>
+                </div>
+
+                <? if(!empty($this->album)): ?>
+                    <h5><a href="artist/view/<?= urlencode($this->artist['artist']); ?>/<?= urlencode($this->album['title']); ?>" title="<?= $this->artist['artist']; ?>"><?= $this->album['title']; ?></a></h5>
+                <? endif;?>
+
+                
+                <? if (!empty($this->genres)): ?>
+                    <? $c = 0; ?>
+                    <? foreach($this->genres as $genre): ?>
+                        <? if ($c < 15): ?>
+                            <a href="genre/<?= urlencode($genre['genre_name']); ?>" title="<?= $genre['genre_name'] ;?>"><?= $genre['genre_name'] ;?> &nbsp;</a>
+                        <? else: 
+                            break;
+                           endif; 
+                        ?>
+                    <? $c++; ?>
+                    <? endforeach; ?>
+                <? endif; ?> 
+                <br><br>
+                
+            </div>
+
+            <!-- Sim artist -->
+            <div class="grid_6">
+                <? if( !empty( $this->simularArtist ) ): ?>
+                <div class="box">
+                    <h2><?= $this->translate('Box_Head_Artist_Similar'); ?></h2>
+                    <div class="block" style="height:150px;overflow: auto;">
+                        
+                            <? foreach($this->simularArtist as $simularArtist): ?>
+                                <div class="grid_6">
+                                    <? if (is_file(Zend_Registry::get('siteRootDir') . $simularArtist['image'])): ?>
+                                        <img src="<?= $simularArtist['image']; ?>" alt="<?= $simularArtist['artist']; ?>" width="50" style="max-height:50px;" border="0">
+                                    <? else: ?>
+                                        <img src="images/no_image_170.gif" alt="<?= $simularArtist['artist']; ?>" width="50" style="max-height:50px; border="0">                                        
+                                    <? endif; ?>
+                                </div>
+                                <div class="grid_10">
+                                    <a href="artist/view/<?= urlencode($simularArtist['artist']); ?>" title="<?= $simularArtist['artist']; ?>"><?= $simularArtist['artist']; ?></a><br>
+                                    <?= $simularArtist['match']; ?>% <?= $this->translate('Text_Artist_Match'); ?>
+                                </div>
+                                <div class="clear"></div>
+                            <? endforeach; ?>  
+                    </div>
+                </div>
+                <? endif; ?>
+            </div>
+            <div class="clear"></div>            
+                <h6><a href="artist/more/<?= urlencode($this->artist['artist']); ?>" title="<?= $this->translate('Link_Artist_More'); ?>"><?= $this->translate('Link_Artist_More'); ?></a> | <a href="artist/pictures/<?= urlencode($this->artist['artist']); ?>" title=""><?= $this->translate('Link_Artist_More_Pictures'); ?></a> | <a href="artist/events/<?= urlencode($this->artist['artist']); ?>"><?= $this->translate('Link_Artist_Events'); ?></a></h6>
+        </div>
+    </div>
+
+    <? if( !empty($this->album) ): ?>
+    <div class="box">
+        <h2><?= $this->album['title']; ?></h2>
+        <div class="block">
+            <div class="grid_4">
+                <? if (is_file(Zend_Registry::get('siteRootDir') . $this->album['image'])): ?>
+                    <a href="<?= $this->album['image']; ?>" dojoType="dojox.image.Lightbox" title="<?= $this->album['title']; ?>"><img src="<?= $this->album['image']; ?>" alt="<?= $this->album['title']; ?>" width="150" style="max-height:150px;" border="0"></a>
+                <? else: ?>
+                    <img src="images/no_image_170.gif" alt="<?= $this->album['title']; ?>" width="150" style="max-height:150px; border="0">                                        
+                <? endif; ?>
+            </div>
+            <div class="grid_12">
+                <h4><?= $this->album['title']; ?></h4>
+                <div class="grid_4"><?= $this->translate('Text_Artist_Released'); ?></div>
+                <div class="grid_12"><?= date($this->configuration->config->dateformat, strtotime($this->album['released'])); ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Text_Artist_Track_Count'); ?></div>
+                <div class="grid_12"><?= $this->album['track_count']; ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Text_Artist_Playtime_Secs'); ?></div>
+                <div class="grid_12"><?= $this->convertToMin($this->album['playtime_secs']); ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Text_Artist_Play_Count'); ?></div>
+                <div class="grid_12"><?= $this->album['play_count']; ?></div>
+                <div class="clear"></div>
+                
+                <div class="grid_4"><?= $this->translate('Text_Artist_Date_Added'); ?></div>
+                <div class="grid_12"><?= date($this->configuration->config->dateformat, $this->album['date_added']); ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_16">
+                <? @$tagArray = unserialize($this->album['genres']);
+                    if( !empty($tagArray) ):?>
+                        <? foreach($tagArray['tag'] as $tag): ?>
+                            <a href="genre/view/<?= urlencode($tag['name']); ?>" title="<?= $tag['name']; ?>"><?= $tag['name']; ?></a>&nbsp;
+                        <? endforeach; ?>
+                    <? endif; ?>   
+                </div>           
+            </div>
+        
+            <div class="clear"></div>   
+            
+        <? if ( !empty($this->albumTracks) ): ?>
+            <table>
+                <tr>
+                    <th></th>
+                    <th><?= $this->translate('Field_Artist_Track_Title'); ?></th>
+                    <th><?= $this->translate('Field_Artist_Track'); ?></th>
+                    <th><?= $this->translate('Field_Artist_Track_Playtime_Seconds'); ?></th>
+                    <th><?= $this->translate('Field_Track_Plays');?></th>
+                </tr>
+                <? foreach($this->albumTracks as $tracks): ?>
+                <tr>
+                    <td></td>
+                    <td><a href="artist/view/<?= urlencode($this->artist['artist']); ?>/<?= urlencode($this->album['title']); ?>/<?= urlencode($tracks['title']); ?>" title=""><?= $tracks['title']; ?></a></td>
+                    <td><?= $tracks['track']; ?></td>
+                    <td><?= $this->convertToMin($tracks['playtime_seconds']); ?></td>
+                    <td><?= $tracks['play_count']; ?></td>
+                </tr>
+                <? endforeach; ?>
+            </table>
+            <?= $this->paginationControl($this->albumTracks, 'Sliding', 'pagination_control.phtml'); ?>
+        <? endif;?>
+
+        <? if($this->track): ?>
+            <h4><?= $this->track['title']; ?></h4>
+            <div class="grid_8">
+                <div class="grid_4"><?= $this->translate('Field_Artist_Track'); ?></div>
+                <div class="grid_12"><?= $this->track['track']; ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Field_Artist_Year'); ?></div>
+                <div class="grid_12"><?= $this->track['year']; ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Field_Artist_Genre'); ?></div>
+                <div class="grid_12"><?= $this->track['genre']; ?></div>
+                <div class="clear"></div>
+        
+                <div class="grid_4"><?= $this->translate('Field_Artist_Playtime_Seconds'); ?></div>
+                <div class="grid_12"><?= $this->convertToMin($this->track['playtime_seconds']); ?></div>
+                <div class="clear"></div>
+            </div>
+            <div class="grid_8">
+
+                <div class="grid_4"><?= $this->translate('Field_Artist_Bitrate'); ?></div>
+                <div class="grid_12"><?= $this->track['bitrate']; ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Field_Artist_Filesize'); ?></div>
+                <div class="grid_12"><?= $this->track['filesize']; ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Field_Artist_Fileformat'); ?></div>
+                <div class="grid_12"><?= $this->track['fileformat']; ?></div>
+                <div class="clear"></div>
+
+                <div class="grid_4"><?= $this->translate('Field_Artist_Codec'); ?></div>
+                <div class="grid_12"><?= $this->track['codec']; ?></div>
+                <div class="clear"></div>
+
+                <div class=grid_16"><br></div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+
+            
+        <? endif; ?>
+        </div>
+    </div>
+    <? endif; ?>
+
+
+
+    <? if (!empty($this->playedTracks)): ?>
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Artist_Tracks'); ?></h2>
+        <div class="block">
+            <table>
+                <tr>
+                    <th></th>
+                    <th><?= $this->translate('Field_Track_Title'); ?></th>
+                    <th><?= $this->translate('Field_Album_Title'); ?></th>
+                    <th><?= $this->translate('Field_Track_Length');?></th>
+                    <th><?= $this->translate('Field_Track_Plays');?></th>
+                </tr>
+                <? foreach($this->playedTracks as $tracks): ?>
+                    <tr>
+                        <td></td>
+                        <td><a href="artist/view/<?= urlencode($this->artist['artist']); ?>/<?= urlencode($tracks['album']); ?>/<?= urlencode($tracks['title']); ?>" title="<?= $tracks['title']; ?>"><?= $tracks['title']; ?></a></td>
+                        <td><a href="artist/view/<?= urlencode($this->artist['artist']); ?>/<?= urlencode($tracks['album']); ?>" title="<?= $tracks['album']; ?>"><?= $tracks['album']; ?></a></td>
+                        <td><?= $this->convertToMin($tracks['playtime_seconds']); ?></td>
+                        <td><?= $tracks['play_count'];?></td>
+                    </tr>
+                    <? endforeach; ?>
+            </table>
+            <?= $this->paginationControl($this->playedTracks, 'Sliding', 'pagination_control.phtml'); ?>
+        </div>
+    </div>
+    <? endif; ?>
+
+</div>

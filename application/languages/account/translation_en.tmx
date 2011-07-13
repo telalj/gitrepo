@@ -1,0 +1,572 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <!-- Module -->
+    <tu tuid='Module_Account_Title'>
+        <tuv xml:lang="en"><seg>Account</seg></tuv>
+    </tu>
+
+    <!-- Meta Tags -->
+    <tu tuid='Meta_Account_Index_Title'>
+        <tuv xml:lang="en"><seg>My Account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Edit_Title'>
+        <tuv xml:lang="en"><seg>My Account Details</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Address_Title'>
+        <tuv xml:lang="en"><seg>My Address's</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Password_Title'>
+        <tuv xml:lang="en"><seg>Change Your Password</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Email_Title'>
+        <tuv xml:lang="en"><seg>My News Letters</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Home_Description'>
+        <tuv xml:lang="en"><seg>This is my account on Vcat Shop</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Edit_Description'>
+        <tuv xml:lang="en"><seg>This is where you edit your account details.</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Address_Description'>
+        <tuv xml:lang="en"><seg>This is where you edit your account address's</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Password_Description'>
+        <tuv xml:lang="en"><seg>This is where your change your password</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Email_Description'>
+        <tuv xml:lang="en"><seg>This is where you choose your email settings.</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Home_Keywords'>
+        <tuv xml:lang="en"><seg>account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Edit_Keywords'>
+        <tuv xml:lang="en"><seg>account,edit,my account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Address_Keywords'>
+        <tuv xml:lang="en"><seg>account, address, edit, my account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Password_Keywords'>
+        <tuv xml:lang="en"><seg>account, password, change</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Email_Keywords'>
+        <tuv xml:lang="en"><seg>email, my account, edit</seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Account_Register_Title'>
+        <tuv xml:lang="en"><seg>Register New Account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Register_Keywords'>
+        <tuv xml:lang="en"><seg>register, new account, vcat software, my store,</seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Account_Register_Description'>
+        <tuv xml:lang="en"><seg>Registration is fast and easy with Vcat Software</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Login_Title'>
+        <tuv xml:lang="en"><seg>Sign In To My Account</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Account_Lost-password_Title'>
+        <tuv xml:lang="en"><seg>Reset Your Password</seg></tuv>
+    </tu>
+
+    <!-- Menu -->
+    <tu tuid='Menu_Account'>
+        <tuv xml:lang="en"><seg>My Account</seg></tuv>
+    </tu>     
+    <tu tuid='Menu_Account_Edit'>
+        <tuv xml:lang="en"><seg>My Details</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Edit_Complete'>
+        <tuv xml:lang="en"><seg>Complete</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Account_Address'>
+        <tuv xml:lang="en"><seg>My Address</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Account_Password'>
+        <tuv xml:lang="en"><seg>Change My Password</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Account_Email'>
+        <tuv xml:lang="en"><seg>Email News Letters</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Register'>
+        <tuv xml:lang="en"><seg>Register</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Login'>
+        <tuv xml:lang="en"><seg>Sign In</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Activate'>
+        <tuv xml:lang="en"><seg>Activate</seg></tuv>
+    </tu>    
+    <tu tuid='Menu_Account_Activate_Complete'>
+        <tuv xml:lang="en"><seg>Complete</seg></tuv>
+    </tu>
+     <tu tuid='Menu_Account_Register_Complete'>
+        <tuv xml:lang="en"><seg>Registrer Completed</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Lost-password'>
+        <tuv xml:lang="en"><seg>Reset Password</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Lost-password_Sent'>
+        <tuv xml:lang="en"><seg>Reset Password Sent</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Lost-password_Reset'>
+        <tuv xml:lang="en"><seg>Reset Password</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Lost-password_Complete'>
+        <tuv xml:lang="en"><seg>Complete</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Index'>
+        <tuv xml:lang="en"><seg>Account Home</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Address_Complete'>
+        <tuv xml:lang="en"><seg>Edit Complete</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Account_Password_Complete'>
+        <tuv xml:lang="en"><seg>Password Change Complete</seg></tuv>
+    </tu>
+
+    <!-- Box Heads -->   
+    <tu tuid='Box_Head_Account_Email'>
+        <tuv xml:lang="en"><seg>Email News Letters</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Account_Password'>
+        <tuv xml:lang="en"><seg>Change My Password</seg></tuv>
+    </tu>    
+    <tu tuid='Box_Head_Account_Address'>
+        <tuv xml:lang="en"><seg>My Address</seg></tuv>
+    </tu>   
+    <tu tuid='Box_Head_Account_Edit'>
+        <tuv xml:lang="en"><seg>My Account</seg></tuv>
+    </tu>    
+    <tu tuid='Box_Head_Account_Recent_Orders'>
+        <tuv xml:lang="en"><seg>My Music</seg></tuv>
+    </tu>     
+    <tu tuid='Box_Head_Account_Login'>
+        <tuv xml:lang="en"><seg>Returning Customers</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Edit'>
+        <tuv xml:lang="en"><seg>Edit Account Details</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Address'>
+        <tuv xml:lang="en"><seg>Edit Account Address</seg></tuv>
+    </tu>    
+    <tu tuid='Box_Head_Account_Register'>
+        <tuv xml:lang="en"><seg>New Account</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Activate'>
+        <tuv xml:lang="en"><seg>Acctivate Account</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Activate_Complete'>
+        <tuv xml:lang="en"><seg>Account Is Active</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Register_Complete'>
+        <tuv xml:lang="en"><seg>Registration is Complete</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Password_Reset'>
+        <tuv xml:lang="en"><seg>Request New Password</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Account_Lost_Password_Sent'>
+        <tuv xml:lang="en"><seg>New Password Request Sent</seg></tuv>
+    </tu> 
+    <tu tuid='Box_Head_Account_Password'>
+        <tuv xml:lang="en"><seg>Change Password</seg></tuv>
+    </tu> 
+    
+    <!-- Form -->    
+    <tu tuid='Form_Account_Edit_Legend'>
+        <tuv xml:lang="en"><seg><strong>Edit Your Account Details</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>   
+    <tu tuid='Form_Account_Address_Billing_Legend'>
+        <tuv xml:lang="en"><seg><strong>Your Billing Address</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>   
+    <tu tuid='Form_Account_Address_Shipping_Legend'>
+        <tuv xml:lang="en"><seg><strong>Your Shipping Address</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>    
+    <tu tuid='Form_Account_Password_Legend'>
+        <tuv xml:lang="en"><seg><strong>Change Your Password</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>    
+    <tu tuid='Form_Account_Email_Legend'>
+        <tuv xml:lang="en"><seg><strong>Your News Letters</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>
+    <tu tuid='Form_Account_Login_Legend'>
+        <tuv xml:lang="en"><seg><strong>Please Sign In</strong></seg></tuv>
+    </tu>
+    <tu tuid='Form_Account_Register_Personal_Legend'>
+        <tuv xml:lang="en"><seg><strong>Your Personal Details</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>
+    <tu tuid='Form_Account_Register_Address_Legend'>
+        <tuv xml:lang="en"><seg><strong>Address Details</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>
+    <tu tuid='Form_Account_Register_Contact_Legend'>
+        <tuv xml:lang="en"><seg><strong>Additional Contact Details</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>
+    <tu tuid='Form_Account_Register_Login_Legend'>
+        <tuv xml:lang="en"><seg><strong>Login Details</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>
+    <tu tuid='Form_Account_Register_Email_Legend'>
+        <tuv xml:lang="en"><seg><strong>Email News Letters</strong> - <i>Fields marked with <span class="required">*</span> are required.</i></seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Username'>
+        <tuv xml:lang="en"><seg>Username</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Firstname'>
+        <tuv xml:lang="en"><seg>First Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Lastname'>
+        <tuv xml:lang="en"><seg>Last Name</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Address'>
+        <tuv xml:lang="en"><seg>Email Address</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Please provide a valid Email address as we will use this address to send important messages about your account. We do not share your email with any third party companies.</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Telephone'>
+        <tuv xml:lang="en"><seg>Telephone</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Alt_Telephone'>
+        <tuv xml:lang="en"><seg>Fax</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Email_Type'>
+        <tuv xml:lang="en"><seg>Email Format</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Receive_Email'>
+        <tuv xml:lang="en"><seg>Receive Email</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Submit'>
+        <tuv xml:lang="en"><seg>Subscribe</seg></tuv>
+    </tu> 
+    <tu tuid='Field_Account_Receive_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Checking this box will allow us to send you email news about our company.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Type_Descrp'>
+        <tuv xml:lang="en"><seg>Specifiy the email format that we will send you.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Lost_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Provide use the email address associated with your account. A reset code will be mailed to this email address along with your username. If you can not remember the email address you used please use the Contact Us form in the menu.</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Shipping_Address_Name'>
+        <tuv xml:lang="en"><seg>Address Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Street'>
+        <tuv xml:lang="en"><seg>Street Address:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Street2'>
+        <tuv xml:lang="en"><seg>Street Address Cont</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_City'>
+        <tuv xml:lang="en"><seg>City</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Postal'>
+        <tuv xml:lang="en"><seg>Postal Code</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Geo_Zone'>
+        <tuv xml:lang="en"><seg>State/Province</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Name'>
+        <tuv xml:lang="en"><seg>Billing Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Street'>
+        <tuv xml:lang="en"><seg>Billing Street</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Street2'>
+        <tuv xml:lang="en"><seg>Billing Street Cont</seg></tuv>
+    </tu>       
+    <tu tuid='Field_Account_Billing_Address_City'>
+        <tuv xml:lang="en"><seg>Billing City</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Postal'>
+        <tuv xml:lang="en"><seg>Billing Postal Code</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Geo_Zone'>
+        <tuv xml:lang="en"><seg>Billing State/ Province</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Submit'>
+        <tuv xml:lang="en"><seg>Save Address</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Password'>
+        <tuv xml:lang="en"><seg>Password</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Vfry_Password'>
+        <tuv xml:lang="en"><seg>Verify Password</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Password_Submit'>
+        <tuv xml:lang="en"><seg>Save Password</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Login_Submit'>
+        <tuv xml:lang="en"><seg>Sign In</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Submit'>
+        <tuv xml:lang="en"><seg>Save My Details</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Register_Submit'>
+        <tuv xml:lang="en"><seg>Register</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Register_Submit'>
+        <tuv xml:lang="en"><seg>Register</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Email_Type_Text'>
+        <tuv xml:lang="en"><seg>Text</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Type_HTML'>
+        <tuv xml:lang="en"><seg>HTML</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Name'>
+        <tuv xml:lang="en"><seg>Address Name</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Street'>
+        <tuv xml:lang="en"><seg>Street</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Street2'>
+        <tuv xml:lang="en"><seg>Stree Cont.</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Address_City'>
+        <tuv xml:lang="en"><seg>City</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Address_Postal'>
+        <tuv xml:lang="en"><seg>Postal Code</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Invite_Code'>
+        <tuv xml:lang="en"><seg>Code</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Invite_Activate_Submit'>
+        <tuv xml:lang="en"><seg>Submit</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Lost_Password_Submit'>
+        <tuv xml:lang="en"><seg>Submit</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Password_Code'>
+        <tuv xml:lang="en"><seg>Password Reset Code</seg></tuv>
+    </tu>    
+    
+    <!-- Form Legends -->    
+    <tu tuid='Form_Legend_Account_Personal'>
+        <tuv xml:lang="en"><seg>Personal Information</seg></tuv>
+    </tu>    
+    <tu tuid='Form_Legend_Account_Phone'>
+        <tuv xml:lang="en"><seg>Telephone</seg></tuv>
+    </tu>    
+    <tu tuid='Form_Legend_Account_Address'>
+        <tuv xml:lang="en"><seg>Address</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Login'>
+        <tuv xml:lang="en"><seg>Login</seg></tuv>
+    </tu>   
+    <tu tuid='Form_Legend_Account_News_Letters'>
+        <tuv xml:lang="en"><seg>News Letters</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Activate_Invite'>
+        <tuv xml:lang="en"><seg>Activate your Invitation</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Activate'>
+        <tuv xml:lang="en"><seg>Activate your Account</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Lost_Password'>
+        <tuv xml:lang="en"><seg>Request New Password</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Reset_Password'>
+        <tuv xml:lang="en"><seg>Reset Password</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Email'>
+        <tuv xml:lang="en"><seg>Email Settings</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Change_Password'>
+        <tuv xml:lang="en"><seg>Change Password</seg></tuv>
+    </tu>
+    
+
+    <!-- Error -->      
+    <tu tuid='Error_Account_Firstname_NotEmpty'>
+        <tuv xml:lang="en"><seg>Fist Name is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Firstname_StringLength'>
+        <tuv xml:lang="en"><seg>First Name should be 2 to 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>     
+    <tu tuid='Error_Account_Lastname_NotEmpty'>
+        <tuv xml:lang="en"><seg>Last Name is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Lastname_StringLength'>
+        <tuv xml:lang="en"><seg>Last Name should be 2 to 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Email_Address_NotEmpty'>
+        <tuv xml:lang="en"><seg>Email Address is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Email_Address_EmailAddress'>
+        <tuv xml:lang="en"><seg>Emaild Address is not valid!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Email_Address_EmailExists'>
+        <tuv xml:lang="en"><seg>The Email Address already exisits, please provide another email address!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Telephone_StringLength'>
+        <tuv xml:lang="en"><seg>Telephone Number should be 10 - 20 characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Alt_Telephone_StringLength'>
+        <tuv xml:lang="en"><seg>Alterante Telephone Number should be 10 - 20 characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Name_StringLength'>
+        <tuv xml:lang="en">Address Name should be 2 - 60 Alpha-Numeric characters!<seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Street_NotEmpty'>
+        <tuv xml:lang="en"><seg>Address Street is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Street_StringLength'>
+        <tuv xml:lang="en"><seg>Address Street should be 2 - 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_City_NotEmpty'>
+        <tuv xml:lang="en"><seg>Address City is required!</seg></tuv>
+    </tu>  
+    <tu tuid='Error_Account_Shipping_Address_City_StringLength'>
+        <tuv xml:lang="en"><seg>Address City should be 2 - 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Postal_NotEmpty'>
+        <tuv xml:lang="en"><seg>Address Postal code is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Postal_StringLength'>
+        <tuv xml:lang="en"><seg>Address Postal Code should be 5 - 20 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Postal_Alnum'>
+        <tuv xml:lang="en"><seg>Address Postal Code should be 5 - 20 Alpha-Numeric characters!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Password_NotEmpty'>
+        <tuv xml:lang="en"><seg>Password is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Password_Alnum'>
+        <tuv xml:lang="en"><seg>Password should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Password_StringLength'>
+        <tuv xml:lang="en"><seg>Password should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Vfry_Password_NotEmpty'>
+        <tuv xml:lang="en"><seg>Verify Password is required!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Vfry_Password_IdenticalField'>
+        <tuv xml:lang="en"><seg>Passwords do not match!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Username_UsernameExists'>
+        <tuv xml:lang="en"><seg>The Username already has been used, please try another username!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Username_NotEmpty'>
+        <tuv xml:lang="en"><seg>Username is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Username_Alnum'>
+        <tuv xml:lang="en"><seg>Username should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>     
+    <tu tuid='Error_Account_Username_StringLength'>
+        <tuv xml:lang="en"><seg>Username should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Invite_Code_NotEmpty'>
+        <tuv xml:lang="en"><seg>The code is required</seg></tuv>
+    </tu>     
+    <tu tuid='Error_Account_Invite_Code_InviteCode'>
+        <tuv xml:lang="en"><seg>The code was invalid</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Email_Address_ValidEmail'>
+        <tuv xml:lang="en"><seg>Sorry but we could not find an account with the Email Address you provided.</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Password_Code_NotEmpty'>
+        <tuv xml:lang="en"><seg>The Reset Code is required!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Password_Code_InviteCode'>
+        <tuv xml:lang="en"><seg>The Reset Code is not valid!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Missing_Username_Field'>
+        <tuv xml:lang="en"><seg>The Username is required!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Missing_Password_Field'>
+        <tuv xml:lang="en"><seg>The Password is required!</seg></tuv>
+    </tu>
+
+    <!-- Text -->    
+    <tu tuid='Text_Account_Address_Comlete'>
+        <tuv xml:lang="en"><seg>Your Account Address has been updated.</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Account_Edit_Comlete'>
+        <tuv xml:lang="en"><seg>Your Account Details have been updated.</seg></tuv>
+    </tu>   
+    <tu tuid='Text_Account_Password_Reset_Complete'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>    
+    <tu tuid='Text_Account_Email_Complete'>
+        <tuv xml:lang="en"><seg></seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Lost_Password'>
+        <tuv xml:lang="en"><seg>Lost your password?</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Register_Mesg'>
+        <tuv xml:lang="en"><seg>Create a User Profile with VooDoo Music Box and take advantage of our other member's benefits.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Register_Check_Account'>
+        <tuv xml:lang="en"><seg>NOTE: If you already have an account with us, please login at the <a href="/account/login">login page</a>.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Login_Message'>
+        <tuv xml:lang="en"><seg>In order to continue, please login to your VooDoo Music Box account.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Register_About_Username'>
+        <tuv xml:lang="en"><seg>Your <b>Username</b> is your login and will be used to identify you on our system. Only 6 - 20 alpha numeric characters only.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Activate_Complete'>
+        <tuv xml:lang="en"><seg>Your account is active and you may sign in using the link below.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Register_Comlete'>
+        <tuv xml:lang="en"><seg>Your account has been created, if you have problems accessing your account please use the contact form provided in the menu. We hope you enjoy the site.</seg></tuv>
+    </tu> 
+    <tu tuid='Text_Account_Register_Activate_Email'>
+        <tuv xml:lang="en"><seg>Your account still needs to be activated. Please check your email account for the activation email. If you do not recieve the email please use the contact form provided and the site admin will activate your account. </seg></tuv>
+    </tu> 
+    <tu tuid='Text_Account_Lost_Password_Sent'>
+        <tuv xml:lang="en"><seg>A reset code and link have been emailed to the email address you have provided. If you do not receive this email please use the Contact Us form in the menu.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Account_Password_Reset_Complete'>
+        <tuv xml:lang="en"><seg>Your password has been reset. Please sign in and verify the change.</seg></tuv>
+    </tu>
+    
+    
+
+    <!-- Link -->
+    <tu tuid='Link_Account_Register'>
+        <tuv xml:lang="en"><seg>Sign Up</seg></tuv>
+    </tu>
+    <tu tuid='Link_Account_Lost_Password'>
+        <tuv xml:lang="en"><seg>Reset Password</seg></tuv>
+    </tu>
+    <tu tuid='Link_Account_Sigin'>
+        <tuv xml:lang="en"><seg>Sign In</seg></tuv>
+    </tu>
+
+    <!-- Email -->    
+    <tu tuid='Mail_Account_Email_Activate_Subject'>
+        <tuv xml:lang="en"><seg>VooDoo Music Account</seg></tuv>
+    </tu>    
+    <tu tuid='Mail_Account_Email_Activate_Welcome'>
+        <tuv xml:lang="en"><seg>Welcome to VooDoo Music Box. The Open Source web juke box. </seg></tuv>
+    </tu>    
+    <tu tuid='Mail_Account_Email_Activate_Link'>
+        <tuv xml:lang="en"><seg>Please use the link below to activate your account.</seg></tuv>
+    </tu>
+    <tu tuid='Mail_Account_Email_Activate_Contact_Details'>
+        <tuv xml:lang="en"><seg>Some one, hopefully you registered on our site using the following information:</seg></tuv>
+    </tu>
+    <tu tuid='Mail_Account_Email_Activate_Thankyou'>
+        <tuv xml:lang="en"><seg>Thank you for registering at VooDoo Music Box,</seg></tuv>
+    </tu>
+    <tu tuid='Mail_Account_Email_Register_Subject'>
+        <tuv xml:lang="en"><seg>VooDoo Music Account</seg></tuv>
+    </tu>
+    <tu tuid='Mail_Account_Email_Register_Welcome'>
+        <tuv xml:lang="en"><seg>Welcome to VooDoo Music Box. The Open Source web juke box.</seg></tuv>
+    </tu>
+    <tu tuid='Mail_Account_Admin_Email_Register_Subject'>
+        <tuv xml:lang="en"><seg>Admin New VooDoo Music Account</seg></tuv>
+    </tu>
+    <tu tuid='Mail_Account_Email_Lost_Password_Subject'>
+        <tuv xml:lang="en"><seg>Lost Password Request</seg></tuv>
+    </tu>
+    <tu tuid='Mail_Account_Email_Lost_Password_Text'>
+        <tuv xml:lang="en"><seg>A reset password request was requested for your account. If you did not initiate the request simply ignore this email and the request will expire in 24 hours. If you did indeed loose your password click the link below to reset your password.</seg></tuv>
+    </tu>
+    
+    
+    
+</body>
+</tmx>

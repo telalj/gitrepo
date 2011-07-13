@@ -1,0 +1,40 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Box
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: album.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Album_Menu'); ?></h2>
+        <div class="block">       
+            <ul class="menu">
+                <li><a href="album/" title="<?= $this->translate('Link_Album_Home'); ?>"><?= $this->translate('Link_Album_Home'); ?></a></li>
+            
+                <? if ($this->moduleConfig->rss): ?>
+                <li><a href="album/rss/" title="<?= $this->translate('Link_Album_Rss'); ?>"><?= $this->translate('Link_Album_Rss'); ?></a></li>
+                <? endif; ?>
+
+                <? if ($this->moduleConfig->api): ?>
+                <li><a href="album/soap?wsdl" title="<?= $this->translate('Link_Album_Soap');?>" target="new"><?= $this->translate('Link_Album_Soap');?></a></li>
+                <? endif; ?>
+            </ul>
+        </div>
+    </div>
+</div>

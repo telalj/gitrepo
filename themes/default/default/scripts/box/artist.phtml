@@ -1,0 +1,101 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Box
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: artist.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Artist_Menu'); ?></h2>
+        <div class="block">
+            <ul class="menu">
+                              
+                <? if(!empty($this->artistName)): ?>
+                    <li><a href="artist/view/<?= urlencode($this->artistName); ?>" title="<?= $this->translate('Link_Artist_Home'); ?>"><?= $this->translate('Link_Artist_Home'); ?></a></li>
+                    
+                    <? if($this->acl->isAllowed($this->accountType, null, 'update') ? "1" : "0"): ?>
+                        <li><a href="artist/edit/<?= urlencode($this->artistName); ?>" title="<?= $this->translate('Link_Artist_Edit'); ?>"><?= $this->translate('Link_Artist_Edit'); ?></a></li>                        
+                    <? endif; ?>
+
+                    <? if($this->acl->isAllowed($this->accountType, null, 'create') ? "1" : "0"): ?>
+                        <li><a href="album/add/<?= urlencode($this->artistName); ?>" title="<?= $this->translate('Link_Artist_Add_Album'); ?>"><?= $this->translate('Link_Artist_Add_Album'); ?></a></li>
+                        <li><a href="picture/add/artist-image/artist/<?= urlencode($this->artistName); ?>" title="<?= $this->translate('Link_Artist_Add_Picture'); ?>"><?= $this->translate('Link_Artist_Add_Picture'); ?></a></li>
+                    <? endif; ?>
+
+                    <? if(!empty($this->albumName)): ?>
+
+                        <? if($this->acl->isAllowed($this->accountType, null, 'update') ? "1" : "0"): ?>
+                            <li><a href="album/edit/<?= urlencode($this->albumName);?>" title="<?= $this->translate('Link_Artist_Edit_Album'); ?>"><?= $this->translate('Link_Artist_Edit_Album'); ?></a></li>                            
+                        <? endif; ?>
+                
+                        <? if($this->acl->isAllowed($this->accountType, null, 'create') ? "1" : "0"): ?>
+                            <li><a href="file/add/<?= urlencode($this->albumName);?>" title="<?= $this->translate('Link_Artist_Add_Track'); ?>"><?= $this->translate('Link_Artist_Add_Track'); ?></a></li>
+                        <? endif; ?>
+
+                        <? if(!empty($this->trackName) ): ?>
+                            <? if($this->acl->isAllowed($this->accountType, null, 'update') ? "1" : "0"): ?>
+                                <li><a href="file/edit/<?= urlencode($this->trackName); ?>" title="<?= $this->translate('Link_Artist_Edit_Track'); ?>"><?= $this->translate('Link_Artist_Edit_Track'); ?></a></li>
+                            <? endif; ?>
+                        <? endif; ?>
+                    <? endif; ?>
+                <?else: ?>
+                     <li><a href="artist/" title="<?= $this->translate('Link_Artist_Home'); ?>"><?= $this->translate('Link_Artist_Home'); ?></a></li>
+                <? endif; ?>
+
+                <? if($this->acl->isAllowed($this->accountType, null, 'create') ? "1" : "0"): ?>
+                    <li><a href="artist/add" title="<?= $this->translate('Link_Artist_Add'); ?>"><?= $this->translate('Link_Artist_Add'); ?></a></li>
+                <? endif; ?>
+
+                <? if ($this->moduleConfig->rss): ?>
+                <li><a href="artist/rss" title="<?= $this->translate('Link_Artist_Rss'); ?>"><?= $this->translate('Link_Artist_Rss'); ?></a></li>
+                <? endif; ?>
+
+                <? if ($this->moduleConfig->api): ?>
+                <li><a href="artist/soap?wsdl" title="<?= $this->translate('Link_Artist_Api'); ?>" target="new"><?= $this->translate('Link_Artist_Api'); ?></a></li>
+                <? endif; ?>
+            </ul>            
+        </div>
+    </div>
+
+    <? if( !empty($this->albums) ): ?>
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Artist_Albums'); ?></h2>
+        <div class="block" style="height:455px;overflow: auto;">
+            <? foreach($this->albums as $album): ?>
+            <div class="grid_16">
+                <p align="center">
+                    <a href="artist/view/<?= urlencode($this->artistName); ?>/<?= urlencode($album['title']); ?>" id="album_<?= $album['album_id']?>">
+                    <? if (is_file(Zend_Registry::get('siteRootDir') . $album['image']) ): ?>
+                       <img src="<?= $album['image']; ?>" style="max-width:100px;" alt="<?= $album['title']; ?>" border="0">
+                    <? else: ?>
+                        <img src="images/no_image_170.gif" alt="<?= $album['title']; ?>" width="126" border="0">
+                    <? endif; ?>
+                    </a><br>
+                    
+                    <a href="artist/view/<?= urlencode($this->artistName); ?>/<?= urlencode($album['title']); ?>" title="<?= $album['title']; ?>"><?= $album['title']; ?></a>
+                    <div dojoType="dijit.Tooltip" connectId="album_<?= $album['album_id']?>" label="<h6><?= $album['title']; ?> </h6><b><?= $this->translate('Text_Default_Artist'); ?>:</b> <?= $album['artist']; ?><br><b><?= $this->translate('Text_Default_Tracks'); ?>:</b> <?= $album['track_count']; ?><br><b><?= $this->translate('Text_Default_Play_Time'); ?>:</b> <?= $this->convertToMin($album['playtime_secs']); ?><br><b><?= $this->translate('Text_Default_Number_Plays'); ?>:</b> <?= $album['play_count']; ?><br><b><?= $this->translate('Text_Default_Date_Added'); ?>:</b> <?= date($this->configuration->config->dateformat, $album  ['date_added']); ?><br> "></div>
+                </p>
+            </div>
+            <div class="clear"></div>
+            <? endforeach;?>
+        </div>
+    </div>
+    <? endif; ?>
+
+</div>

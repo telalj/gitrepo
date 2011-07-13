@@ -1,0 +1,148 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Default
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->action('top-played', 'box'); ?>
+
+<div class="grid_12">
+
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Whats_Playing'); ?></h2>
+        <div class="block">
+
+           <? if($this->topPlayedArtists): ?>
+                <? $count = 1; ?>
+                <? foreach($this->topPlayedArtists as $artist): ?>
+                     <div class="grid_4">                   
+                        <center>
+                            <div style="height:126px;overflow:hidden;">
+                                <a href="artist/view/<?= urlencode($artist['artist']); ?>" id="top_<?= $artist['artist_id']; ?>">
+                                <? if (is_file(Zend_Registry::get('siteRootDir') . $artist['image'])): ?>
+                                    <img src="<?= $artist['image']; ?>" alt="<?= $artist['artist']; ?>" width="126" style="max-height:126px;" border="0">
+                                <? else: ?>
+                                    <img src="images/no_image_170.gif" alt="<?= $artist['artist']; ?>" width="126" border="0">                           
+                                <? endif; ?>
+                                </a>
+                                <div dojoType="dijit.Tooltip" connectId="top_<?= $artist['artist_id']; ?>" label="<h6><?= $artist['artist']; ?></h6><b><?= $this->translate('Text_Default_Albums'); ?>:</b> <?= $artist['album_count'];?> <br><b><?= $this->translate('Text_Default_Tracks'); ?>:</b> <?= $artist['track_count']; ?><br><b><?= $this->translate('Text_Default_Play_Time'); ?>:</b> <?= $this->convertToMin($artist['playtime']); ?><br><b><?= $this->translate('Text_Default_Number_Plays'); ?>:</b> <?= $artist['play_count']; ?><br><b><?= $this->translate('Text_Default_Added'); ?>:</b> <?= date($this->configuration->config->dateformat, $artist['date_added']);?>"></div>
+                            </div>
+                            <br>
+                            <a href="artist/view/<?= urlencode($artist['artist'])?>" title="<?= $artist['artist']; ?>"><?= $artist['artist']; ?></a>
+                        </center>
+                    </div>            
+                    <? if($count > 3): ?>
+                        <div class="clear"></div>
+                        <div class="grid_16"><br></div>
+                        <div class="clear"></div> 
+                    <? $count = 1; ?>
+                    <? else: ?>
+                    <? $count++; ?>
+                    <? endif;?>
+                <? endforeach; ?>
+                <div class="clear"></div>
+               
+           <? else: ?>
+                <p><?= $this->translate('Text_Default_No_Top_Played'); ?></p>
+           <? endif; ?>
+     
+        </div>    
+    </div>
+
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_New_Artists'); ?></h2>
+        <div class="block">
+           <? if($this->newArtists): ?>
+                <? $count = 1; ?>
+                <? foreach($this->newArtists as $artist): ?>
+                     <div class="grid_4">                   
+                        <center>
+                            <div style="height:126px;overflow:hidden;">
+                                <a href="artist/view/<?= urlencode($artist['artist']); ?>"  id="new_Artist_<?= $artist['artist_id']; ?>">
+                                <? if (is_file(Zend_Registry::get('siteRootDir') . $artist['image'])): ?>
+                                    <img src="<?= $artist['image']; ?>" alt="<?= $artist['artist']; ?>" width="126" style="max-height:126px;" border="0">
+                                <? else: ?>
+                                    <img src="images/no_image_170.gif" alt="<?= $artist['artist']; ?>" width="126" border="0">                           
+                                <? endif; ?>
+                                </a>
+                            </div>
+                            <br> 
+                            <a href="artist/view/<?= urlencode($artist['artist'])?>" title="<?= $artist['artist']; ?>"><?= $artist['artist']; ?></a>
+                            <div dojoType="dijit.Tooltip" connectId="new_Artist_<?= $artist['artist_id']; ?>" label="<h6><?= $artist['artist']; ?></h6><b><?= $this->translate('Text_Default_Albums'); ?>:</b> <?= $artist['album_count'];?> <br><b><?= $this->translate('Text_Default_Tracks'); ?>:</b> <?= $artist['track_count']; ?><br><b><?= $this->translate('Text_Default_Play_Time'); ?>:</b> <?= $this->convertToMin($artist['playtime']); ?><br><b><?= $this->translate('Text_Default_Number_Plays'); ?>:</b> <?= $artist['play_count']; ?><br><b><?= $this->translate('Text_Default_Added'); ?>:</b> <?= date($this->configuration->config->dateformat, $artist['date_added']);?>"></div>
+                        </center>
+                    </div>            
+                    <? if($count > 3): ?>
+                        <div class="clear"></div>
+                        <div class="grid_16"><br></div>
+                        <div class="clear"></div> 
+                    <? $count = 1; ?>
+                    <? else: ?>
+                    <? $count++; ?>
+                    <? endif;?>
+                <? endforeach; ?>
+                <div class="clear"></div>
+                
+           <? else: ?>
+                <p><?= $this->translate('Text_Default_No_Top_Played'); ?></p>
+           <? endif; ?>
+        </div>    
+    </div>
+
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_New_Albums'); ?></h2>
+        <div class="block">
+            <? if($this->newAlbums): ?>
+                <? $count = 1; ?>
+                <? foreach($this->newAlbums as $album): ?>
+                     <div class="grid_4">                   
+                        <center>
+                            <div style="height:126px;overflow:hidden;">
+                                <a href="artist/view/<?= urlencode($album['artist']); ?>/<?= urlencode($album['title']); ?>"  id="new_Album_<?= $album['album_id']; ?>">
+                                <? if (is_file(Zend_Registry::get('siteRootDir') . $album['image'])): ?>
+                                    <img src="<?= $album['image']; ?>" alt="<?= $album['title']; ?>" width="126" style="max-height:126px;" border="0">
+                                <? else: ?>
+                                    <img src="images/no_image_170.gif" alt="<?= $album['title']; ?>" width="126" border="0">                           
+                                <? endif; ?>
+                                </a>
+                            </div>
+                            <br> 
+                            <a href="artist/view/<?= urlencode($album['artist'])?>/<?= urlencode($album['title']); ?>" title="<?= $album['title']; ?>"><?= $album['title']; ?></a>
+                            <div dojoType="dijit.Tooltip" connectId="new_Album_<?= $album['album_id']; ?>" label="<h6><?= $album['title']; ?></h6><b><?= $this->translate('Text_Default_Artist'); ?>:</b> <?= $album['artist']; ?><br><b><?= $this->translate('Text_Default_Tracks'); ?>:</b> <?= $album['track_count']; ?><br><b><?= $this->translate('Text_Default_Play_Time'); ?>:</b> <?= $this->convertToMin($album['playtime_secs']); ?><br><b><?= $this->translate('Text_Default_Number_Plays'); ?>:</b> <?= $album['play_count']; ?><br><b><?= $this->translate('Text_Default_Date_Added'); ?>:</b> <?= date($this->configuration->config->dateformat, $album  ['date_added']); ?><br>"></div>
+                        </center>
+                    </div>            
+                    <? if($count > 3): ?>
+                        <div class="clear"></div>
+                        <div class="grid_16"><br></div>
+                        <div class="clear"></div> 
+                    <? $count = 1; ?>
+                    <? else: ?>
+                    <? $count++; ?>
+                    <? endif;?>
+                <? endforeach; ?>
+                <div class="clear"></div>
+                
+           <? else: ?>
+                <p><?= $this->translate('Text_Default_No_Top_Played'); ?></p>
+           <? endif; ?>
+
+
+        </div>    
+    </div>
+    
+</div>

@@ -1,0 +1,72 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Artist
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->action('artist', 'box'); ?>
+
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Artist_Home'); ?></h2>
+        <div class="block">
+            <center><? echo $this->letterSearch;?></center>
+            <br>
+
+            
+            <? if (count($this->artistArray) > 0 ): ?>
+            <? $count = 1; ?>
+            <? foreach($this->artistArray as $artist): ?>
+                <div class="grid_4">
+                    
+                    <center>
+                    <div style="height:126px;overflow:hidden;">
+                    <a href="artist/view/<?= urlencode($artist['artist']); ?>" title="<?= $artist['artist']; ?>">
+                        <? if (is_file(Zend_Registry::get('siteRootDir') . $artist['image'])): ?>
+                            <img src="<?= $artist['image']; ?>" alt="<?= $artist['artist']; ?>" width="126" style="max-height:126px;" border="0">
+                        <? else: ?>
+                            <img src="images/no_image_170.gif" alt="<?= $artist['artist']; ?>" width="126" border="0">
+                            
+                        <? endif; ?>
+                    </a>
+                    </div>
+                    <br>
+                    <a href="artist/view/<?= urlencode($artist['artist'])?>" title="<?= $artist['artist']; ?>"><?= $artist['artist']; ?></a>
+                    </center>
+                    
+                </div>
+                <? if($count > 3): ?>
+                    <div class="clear"></div>
+                    <div class="grid_16"><br></div>
+                    <div class="clear"></div> 
+                <? $count = 1; ?>
+                <? else: ?>
+                <? $count++; ?>
+                <? endif;?>
+                
+            <? endforeach;?>
+            <? else: ?>
+                <?= $this->translate('Txt_Artist_Not_Found'); ?>
+            <? endif; ?>
+            <div class="clear"></div>
+            <?= $this->paginationControl($this->artistArray, 'Sliding', 'pagination_control.phtml'); ?>
+            <br>
+        </div>    
+    </div>
+</div>

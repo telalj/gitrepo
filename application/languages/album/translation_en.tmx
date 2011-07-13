@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Module'>
+        <tuv xml:lang="en"><seg>Album</seg></tuv>
+    </tu>
+    
+    <!-- Meta tags -->
+    <tu tuid='Meta_Album_Rss_Title'>
+        <tuv xml:lang="en"><seg>Albums RSS Feeds - VooDoo Music Box</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Album_Index_Title'>
+        <tuv xml:lang="en"><seg>Albums - VooDoo Music Box</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Album_Index_Keywords'>
+        <tuv xml:lang="en"><seg>Albums, VooDoo Music Box</seg></tuv>
+    </tu>   
+    <tu tuid='Meta_Album_Rss_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box, Albums, RSS Feeds</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Album_Rss_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Album RSS Feeds</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Album_Index_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Albums</seg></tuv>
+    </tu>
+    
+    <!-- Menus -->  
+    <tu tuid='Menu_Album_Index'>
+        <tuv xml:lang="en"><seg>Home</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Album_Rss'>
+        <tuv xml:lang="en"><seg>RSS Feeds</seg></tuv>
+    </tu>
+    
+    <!-- Box Heads -->
+    <tu tuid='Box_Head_Album_Menu'>
+        <tuv xml:lang="en"><seg>Album Menu</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Album_Home'>
+        <tuv xml:lang="en"><seg>Albums</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Album_Rss'>
+        <tuv xml:lang="en"><seg>Album RSS Feeds</seg></tuv>
+    </tu>
+    
+    <!-- Form Legends -->
+
+
+    <!-- Form Fields -->
+
+
+    <!-- Form Errors -->   
+
+
+    <!-- Links -->
+    <tu tuid='Link_Album_Home'>
+        <tuv xml:lang="en"><seg>Album Home</seg></tuv>
+    </tu>
+    <tu tuid='Link_Album_Rss'>
+        <tuv xml:lang="en"><seg>Album RSS</seg></tuv>
+    </tu>
+    <tu tuid='Link_Album_Rss_New_Albums'>
+        <tuv xml:lang="en"><seg>New Albums RSS</seg></tuv>
+    </tu>   
+    <tu tuid='Link_Album_Soap'>
+        <tuv xml:lang="en"><seg>Album API</seg></tuv>
+    </tu>
+    
+   
+    
+
+</body>
+</tmx>

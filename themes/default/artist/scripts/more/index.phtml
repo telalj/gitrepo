@@ -1,0 +1,47 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Artist
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<?= $this->action('artist', 'box', '', array('artist_id' => $this->artist['artist_id'], 'name' => $this->artist['artist'])); ?>
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->artist['artist']; ?> <?= $this->translate('Box_Head_More'); ?></h2>
+        <div class="block">
+            <div class="box">
+            <h4><a href="artist/view/<?= urlencode($this->artist['artist']); ?>" title="<?= $this->artist['artist']; ?>"><?= $this->artist['artist']; ?></a></h4>
+            <p id="btn1"><img src="<?= $this->artist['image']; ?>" alt="<?= $this->artist['artist']; ?>" border="0" align="left" style="padding-right:8px;"><?= nl2br($this->artist['description']); ?></p>
+        </div>
+    </div>
+</div>
+<div dojoType="dijit.Menu" id="popup1campus" contextMenuForWindow="false" style="display: none;" targetNodeIds="btn1">
+    <div dojoType="dijit.MenuItem" onclick="dijit.byId('dialog1').show()">Edit</div>
+</div>
+<div dojoType="dijit.Dialog" id="dialog1" title="First Dialog" execute="alert('submitted w/args:\n' + dojo.toJson(arguments[0], true));">
+                  <table>
+                    <tr>
+                      <td><label for="name">Name: </label></td>
+                      <td><input dojoType="dijit.form.TextBox" type="text" name="name" id="name" value="<?= $this->artist['artist']; ?>"></td>
+                    </tr><tr>
+                      <td colspan="2" align="center">
+                        <button dojoType="dijit.form.Button" type="submit">OK</button></td>
+                    </tr>                    
+                  </table>
+                </div>

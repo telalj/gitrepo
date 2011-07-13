@@ -1,0 +1,384 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Module'>
+        <tuv xml:lang="en"><seg>Genre</seg></tuv>
+    </tu>
+    
+    <!-- Meta tags -->
+    <tu tuid='Meta_Install_Index_Title'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box - Install</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Install_Create-admin_Title'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box - Install</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Genre_Index_Title'>
+        <tuv xml:lang="en"><seg>Genres - VooDoo Music Box</seg></tuv>
+    </tu>
+
+    <tu tuid='Meta_Genre_Index_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Genres</seg></tuv>
+    </tu>
+    
+    
+    <tu tuid='Meta_Genre_Index_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box, Genres</seg></tuv>
+    </tu>
+    
+        
+    <!-- Menus -->
+    <tu tuid='Menu_Install'>
+        <tuv xml:lang="en"><seg>Install</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Install_Index'>
+        <tuv xml:lang="en"><seg>Database Setup</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Install_Create-admin'>
+        <tuv xml:lang="en"><seg>Create Admin Account</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Install_Complete'>
+        <tuv xml:lang="en"><seg>Complete</seg></tuv>
+    </tu>
+    
+    
+    <!-- Box Heads -->
+    <tu tuid='Box_Head_Install_DB'>
+        <tuv xml:lang="en"><seg>Setup Database</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Install_Admin'>
+        <tuv xml:lang="en"><seg>Create Admin Account</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Install_Complete'>
+        <tuv xml:lang="en"><seg>Install Complete</seg></tuv>
+    </tu>
+           
+    
+    <!-- Form Legends -->
+    <tu tuid='Form_Legend_Install_DB'>
+        <tuv xml:lang="en"><seg>Database Parameters</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Personal'>
+        <tuv xml:lang="en"><seg>Personal Information</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Phone'>
+        <tuv xml:lang="en"><seg>Telephone</seg></tuv>
+    </tu>  
+    <tu tuid='Form_Legend_Account_Address'>
+        <tuv xml:lang="en"><seg>Address</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_Login'>
+        <tuv xml:lang="en"><seg>Login</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Account_News_Letters'>
+        <tuv xml:lang="en"><seg>News Letters</seg></tuv>
+    </tu>
+
+    <!-- Form Fields -->    
+    <tu tuid='Field_Install_Host'>
+        <tuv xml:lang="en"><seg>Database Host</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Install_Dbname'>
+        <tuv xml:lang="en"><seg>Database Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Install_Username'>
+        <tuv xml:lang="en"><seg>Database Username</seg></tuv>
+    </tu>   
+     <tu tuid='Field_Install_Username_Description'>
+        <tuv xml:lang="en"><seg>Database Username must have permissions to create a database on the server. If you have created the database using a control panel then enter the database name here.</seg></tuv>
+    </tu> 
+    <tu tuid='Field_Install_Password'>
+        <tuv xml:lang="en"><seg>Database Password</seg></tuv>
+    </tu>
+    <tu tuid='Field_Install_Submit'>
+        <tuv xml:lang="en"><seg>Submit</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Username'>
+        <tuv xml:lang="en"><seg>Username</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Firstname'>
+        <tuv xml:lang="en"><seg>First Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Lastname'>
+        <tuv xml:lang="en"><seg>Last Name</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Address'>
+        <tuv xml:lang="en"><seg>Email Address</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Please provide a valid Email address as we will use this address to send important messages about your account. We do not share your email with any third party companies.</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Telephone'>
+        <tuv xml:lang="en"><seg>Telephone</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Alt_Telephone'>
+        <tuv xml:lang="en"><seg>Fax</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Email_Type'>
+        <tuv xml:lang="en"><seg>Email Format</seg></tuv>
+    </tu>  
+    <tu tuid='Field_Account_Receive_Email'>
+        <tuv xml:lang="en"><seg>Receive Email</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Receive_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Checking this box will allow us to send you email news and updates.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Type_Descrp'>
+        <tuv xml:lang="en"><seg>Specifiy the email format that we will send you.</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Lost_Email_Descrp'>
+        <tuv xml:lang="en"><seg>Provide use the email address associated with your account. A reset code will be mailed to this email address along with your username. If you can not remember the email address you used please use the Contact Us form in the menu.</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Shipping_Address_Name'>
+        <tuv xml:lang="en"><seg>Address Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Street'>
+        <tuv xml:lang="en"><seg>Street Address:</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Street2'>
+        <tuv xml:lang="en"><seg>Street Address Cont</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_City'>
+        <tuv xml:lang="en"><seg>City</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Shipping_Address_Postal'>
+        <tuv xml:lang="en"><seg>Postal Code</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Geo_Zone'>
+        <tuv xml:lang="en"><seg>State/Province</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Name'>
+        <tuv xml:lang="en"><seg>Billing Name</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Street'>
+        <tuv xml:lang="en"><seg>Billing Street</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Street2'>
+        <tuv xml:lang="en"><seg>Billing Street Cont</seg></tuv>
+    </tu>       
+    <tu tuid='Field_Account_Billing_Address_City'>
+        <tuv xml:lang="en"><seg>Billing City</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Billing_Address_Postal'>
+        <tuv xml:lang="en"><seg>Billing Postal Code</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Geo_Zone'>
+        <tuv xml:lang="en"><seg>Billing State/ Province</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Submit'>
+        <tuv xml:lang="en"><seg>Save Address</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Password'>
+        <tuv xml:lang="en"><seg>Password</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Vfry_Password'>
+        <tuv xml:lang="en"><seg>Verify Password</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Password_Submit'>
+        <tuv xml:lang="en"><seg>Save Password</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Login_Submit'>
+        <tuv xml:lang="en"><seg>Sign In</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Submit'>
+        <tuv xml:lang="en"><seg>Save My Details</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Register_Submit'>
+        <tuv xml:lang="en"><seg>Register</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Register_Submit'>
+        <tuv xml:lang="en"><seg>Create Admin</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Email_Type_Text'>
+        <tuv xml:lang="en"><seg>Text</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Email_Type_HTML'>
+        <tuv xml:lang="en"><seg>HTML</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Name'>
+        <tuv xml:lang="en"><seg>Address Name</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Street'>
+        <tuv xml:lang="en"><seg>Street</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Address_Street2'>
+        <tuv xml:lang="en"><seg>Stree Cont.</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Account_Address_City'>
+        <tuv xml:lang="en"><seg>City</seg></tuv>
+    </tu>   
+    <tu tuid='Field_Account_Address_Postal'>
+        <tuv xml:lang="en"><seg>Postal Code</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Invite_Code'>
+        <tuv xml:lang="en"><seg>Code</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Invite_Activate_Submit'>
+        <tuv xml:lang="en"><seg>Submit</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Lost_Password_Submit'>
+        <tuv xml:lang="en"><seg>Submit</seg></tuv>
+    </tu>
+    <tu tuid='Field_Account_Password_Code'>
+        <tuv xml:lang="en"><seg>Password Reset Code</seg></tuv>
+    </tu>    
+    
+
+    <!-- Form Errors -->     
+    <tu tuid='Error_Install_Host_NotEmpty'>
+        <tuv xml:lang="en"><seg>Database Host is required!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Install_Dbname_NotEmpty'>
+        <tuv xml:lang="en"><seg>Database Name is required!</seg></tuv>
+    </tu>  
+    <tu tuid='Error_Install_Username_NotEmpty'>
+        <tuv xml:lang="en"><seg>Database Username is required!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Install_Password_NotEmpty'>
+        <tuv xml:lang="en"><seg>Database Password is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Firstname_NotEmpty'>
+        <tuv xml:lang="en"><seg>Fist Name is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Firstname_StringLength'>
+        <tuv xml:lang="en"><seg>First Name should be 2 to 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>     
+    <tu tuid='Error_Account_Lastname_NotEmpty'>
+        <tuv xml:lang="en"><seg>Last Name is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Lastname_StringLength'>
+        <tuv xml:lang="en"><seg>Last Name should be 2 to 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Email_Address_NotEmpty'>
+        <tuv xml:lang="en"><seg>Email Address is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Email_Address_EmailAddress'>
+        <tuv xml:lang="en"><seg>Emaild Address is not valid!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Email_Address_EmailExists'>
+        <tuv xml:lang="en"><seg>The Email Address already exisits, please provide another email address!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Telephone_StringLength'>
+        <tuv xml:lang="en"><seg>Telephone Number should be 10 - 20 characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Alt_Telephone_StringLength'>
+        <tuv xml:lang="en"><seg>Alterante Telephone Number should be 10 - 20 characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Name_StringLength'>
+        <tuv xml:lang="en">Address Name should be 2 - 60 Alpha-Numeric characters!<seg></seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Street_NotEmpty'>
+        <tuv xml:lang="en"><seg>Address Street is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Street_StringLength'>
+        <tuv xml:lang="en"><seg>Address Street should be 2 - 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_City_NotEmpty'>
+        <tuv xml:lang="en"><seg>Address City is required!</seg></tuv>
+    </tu>  
+    <tu tuid='Error_Account_Shipping_Address_City_StringLength'>
+        <tuv xml:lang="en"><seg>Address City should be 2 - 60 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Postal_NotEmpty'>
+        <tuv xml:lang="en"><seg>Address Postal code is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Postal_StringLength'>
+        <tuv xml:lang="en"><seg>Address Postal Code should be 5 - 20 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Shipping_Address_Postal_Alnum'>
+        <tuv xml:lang="en"><seg>Address Postal Code should be 5 - 20 Alpha-Numeric characters!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Password_NotEmpty'>
+        <tuv xml:lang="en"><seg>Password is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Password_Alnum'>
+        <tuv xml:lang="en"><seg>Password should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Password_StringLength'>
+        <tuv xml:lang="en"><seg>Password should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Vfry_Password_NotEmpty'>
+        <tuv xml:lang="en"><seg>Verify Password is required!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Vfry_Password_IdenticalField'>
+        <tuv xml:lang="en"><seg>Passwords do not match!</seg></tuv>
+    </tu>   
+    <tu tuid='Error_Account_Username_UsernameExists'>
+        <tuv xml:lang="en"><seg>The Username already has been used, please try another username!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Username_NotEmpty'>
+        <tuv xml:lang="en"><seg>Username is required!</seg></tuv>
+    </tu>    
+    <tu tuid='Error_Account_Username_Alnum'>
+        <tuv xml:lang="en"><seg>Username should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>     
+    <tu tuid='Error_Account_Username_StringLength'>
+        <tuv xml:lang="en"><seg>Username should be 6 - 24 Alpha-Numeric characters!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Invite_Code_NotEmpty'>
+        <tuv xml:lang="en"><seg>The code is required</seg></tuv>
+    </tu>     
+    <tu tuid='Error_Account_Invite_Code_InviteCode'>
+        <tuv xml:lang="en"><seg>The code was invalid</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Email_Address_ValidEmail'>
+        <tuv xml:lang="en"><seg>Sorry but we could not find an account with the Email Address you provided.</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Password_Code_NotEmpty'>
+        <tuv xml:lang="en"><seg>The Reset Code is required!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Password_Code_InviteCode'>
+        <tuv xml:lang="en"><seg>The Reset Code is not valid!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Shipping_Address_Name_NotEmpty'>
+        <tuv xml:lang="en"><seg>The Address Name is Required!</seg></tuv>
+    </tu>
+    <tu tuid='Error_Account_Telephone_NotEmpty'>
+        <tuv xml:lang="en"><seg>The Telephone Number is Required!</seg></tuv>
+    </tu>
+    
+
+    <tu tuid='Error_Database_Connect_Fail'>
+        <tuv xml:lang="en"><seg>Could not connect to the database!</seg></tuv>
+    </tu>
+    <!-- Links -->
+    <tu tuid='Link_Install_Sign_In'>
+        <tuv xml:lang="en"><seg>Sign In</seg></tuv>
+    </tu>
+    
+
+    <!-- Text -->
+    <tu tuid='Text_Install_Database_INI'>
+        <tuv xml:lang="en"><seg>Database.ini is writable</seg></tuv>
+    </tu>
+    <tu tuid='Text_Install_DB_Error'>
+        <tuv xml:lang="en"><seg>Create Database</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Install_Config_INI'>
+        <tuv xml:lang="en"><seg>Config.ini is writable</seg></tuv>
+    </tu> 
+    <tu tuid='Text_Install_Media_Dir'>
+        <tuv xml:lang="en"><seg>Media Directory</seg></tuv>
+    </tu> 
+    <tu tuid='Text_Install_Cache_Dir'>
+        <tuv xml:lang="en"><seg>Cache Directory</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Install_Fail'>
+        <tuv xml:lang="en"><seg>FAILED</seg></tuv>
+    </tu>
+    <tu tuid='Text_Install_Ok'>
+        <tuv xml:lang="en"><seg>OK</seg></tuv>
+    </tu>
+    <tu tuid='Text_Install_Complete'>
+        <tuv xml:lang="en"><seg>Your Install of VooDoo Music Box is complete. Please visit the forums for support if you have problems.</seg></tuv>
+    </tu>
+    
+    <tu tuid='Text_Install_Correct_Error'>
+        <tuv xml:lang="en"><seg>Please correct the errors before continuing.</seg></tuv>
+    </tu>
+   
+    
+        
+</body>
+</tmx>

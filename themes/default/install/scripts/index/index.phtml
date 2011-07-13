@@ -1,0 +1,77 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Install
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_16">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Install_DB'); ?></h2>
+        <div class="block">
+            <table>
+                <tr>
+                    <td><?= $this->translate('Text_Install_Database_INI'); ?> <i><?= Zend_Registry::get('siteRootDir').'/application/Configs/Database.ini'; ?></i></td>
+                    <td>
+                        <? if($this->databaseConfig): ?>
+                            <span style="color:green"><b><?= $this->translate('Text_Install_Ok'); ?></b></span>
+                        <? else: ?>
+                            <span style="color:red"><b><?= $this->translate('Text_Install_Fail'); ?></b></span>
+                        <? endif; ?>
+                    </td>
+                </tr><tr>
+                    <td><?= $this->translate('Text_Install_Config_INI'); ?> <i><?= Zend_Registry::get('siteRootDir').'/application/Configs/Config.ini'; ?></i></td>
+                    <td><? if($this->config): ?>
+                            <span style="color:green"><b><?= $this->translate('Text_Install_Ok'); ?></b></span>
+                        <? else: ?>
+                            <span style="color:red"><b><?= $this->translate('Text_Install_Fail'); ?></b></span>
+                        <? endif; ?>
+                    </td>
+                </tr><tr>
+                    <td><?= $this->translate('Text_Install_Media_Dir'); ?> <i><?= Zend_Registry::get('siteRootDir').'/data/media'?></i></td>
+                    <td>
+                        <? if($this->media): ?>
+                            <span style="color:green"><b><?= $this->translate('Text_Install_Ok'); ?></b></span>
+                        <? else: ?>
+                            <span style="color:red"><b><?= $this->translate('Text_Install_Fail'); ?></b></span>
+                        <? endif; ?>
+                    </td>
+                </tr><tr>
+                    <td><?= $this->translate('Text_Install_Cache_Dir'); ?> <i><?= Zend_Registry::get('siteRootDir').'/data/cache/'; ?></i></td>
+                    <td>
+                        <? if($this->cache): ?>
+                            <span style="color:green"><b><?= $this->translate('Text_Install_Ok'); ?></b></span>
+                        <? else: ?>
+                            <span style="color:red"><b><?= $this->translate('Text_Install_Fail'); ?></b></span>
+                        <? endif; ?>
+                    </td>
+                </tr>
+                <? if($this->createDbError): ?>
+                    <tr>
+                        <td><?= $this->translate('Text_Install_DB_Error'); ?></td>
+                        <td><span style="color:red"><?= $this->dbError; ?></span></td>
+                    </tr>
+                <? endif; ?>
+            </table>
+            <? if ( $this->error ): ?>
+                <p style="color:red"><?= $this->translate('Text_Install_Correct_Error'); ?></p>
+            <? endif; ?>
+            <?= $this->form; ?>
+        </div>
+    </div>
+</div>

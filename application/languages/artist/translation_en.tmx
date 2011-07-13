@@ -1,0 +1,301 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Module'>
+        <tuv xml:lang="en"><seg>Artist</seg></tuv>
+    </tu>
+
+    <!-- Meta tags -->
+    <tu tuid='Meta_Artist_Index_Title'>
+        <tuv xml:lang="en"><seg>Artists - VooDoo Music Box</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Rss_Title'>
+        <tuv xml:lang="en"><seg>Artists RSS Feeds - VooDoo Music Box</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_View_Title'>
+        <tuv xml:lang="en"><seg>VooDoo Music Artist - </seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Pictures_Title'>
+        <tuv xml:lang="en"><seg>VooDoo Music Pictures - </seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Event_Title'>
+        <tuv xml:lang="en"><seg>VooDoo Music Events - </seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Edit_Title'>
+        <tuv xml:lang="en"><seg>Edit Artist - </seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Artist_Index_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Artists</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Rss_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Artists RSS Feeds</seg></tuv>
+    </tu>    
+    <tu tuid='Meta_Artist_View_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Artist </seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Event_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Artist </seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Edit_Description'>
+        <tuv xml:lang="en"><seg>Edit Artist VooDoo Music Box </seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Index_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box, Artist</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Rss_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box, Artist, RSS</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Artist_Edit_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box, Artist, Edit</seg></tuv>
+    </tu>
+    
+    <!-- Menus -->
+    <tu tuid='Menu_Artist_Index'>
+        <tuv xml:lang="en"><seg>Home</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Artist_Rss'>
+        <tuv xml:lang="en"><seg>RSS Feeds</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Artist_View'>
+        <tuv xml:lang="en"><seg>View</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Pictures'>
+        <tuv xml:lang="en"><seg>Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Menu_More'>
+        <tuv xml:lang="en"><seg>More</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Artist_Event'>
+        <tuv xml:lang="en"><seg>Events</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Artist_Edit'>
+        <tuv xml:lang="en"><seg>Edit </seg></tuv>
+    </tu>
+       
+    <!-- Box Heads -->
+    <tu tuid='Box_Head_Artist_Menu'>
+        <tuv xml:lang="en"><seg>Artist Menu</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Home'>
+        <tuv xml:lang="en"><seg>Artists</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Rss'>
+        <tuv xml:lang="en"><seg>Artist RSS Feeds</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_View'>
+        <tuv xml:lang="en"><seg>View Artist</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Bio'>
+        <tuv xml:lang="en"><seg>Artist Bio</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Tracks'>
+        <tuv xml:lang="en"><seg>Most Played Tracks</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Similar'>
+        <tuv xml:lang="en"><seg>Similar Artist</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Pictures'>
+        <tuv xml:lang="en"><seg>Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_More'>
+        <tuv xml:lang="en"><seg>More Information</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Artist_Albums'>
+        <tuv xml:lang="en"><seg>Albums</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Event'>
+        <tuv xml:lang="en"><seg>Events</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Edit'>
+        <tuv xml:lang="en"><seg>Edit</seg></tuv>
+    </tu>
+    
+    <!-- Form Legends -->
+    <tu tuid='Form_Legend_Artist_Info'>
+        <tuv xml:lang="en"><seg>Artist Info</seg></tuv>
+    </tu>
+    <tu tuid='Form_Legend_Artist_Genre'>
+        <tuv xml:lang="en"><seg>Artist Genre</seg></tuv>
+    </tu>
+    
+
+    <!-- Form Fields -->    
+    <tu tuid='Field_Track_Title'>
+        <tuv xml:lang="en"><seg>Title</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Album_Title'>
+        <tuv xml:lang="en"><seg>Album</seg></tuv>
+    </tu>    
+    <tu tuid='Field_Track_Length'>
+        <tuv xml:lang="en"><seg>Play Time</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Track_Title'>
+        <tuv xml:lang="en"><seg>Title</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Track'>
+        <tuv xml:lang="en"><seg>Track</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Track_Playtime_Seconds'>
+        <tuv xml:lang="en"><seg>Length</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Year'>
+        <tuv xml:lang="en"><seg>Year</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Genre'>
+        <tuv xml:lang="en"><seg>Genre</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Playtime_Seconds'>
+        <tuv xml:lang="en"><seg>Length</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Bitrate'>
+        <tuv xml:lang="en"><seg>Bitrate</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Filesize'>
+        <tuv xml:lang="en"><seg>Filesize</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Filesize'>
+        <tuv xml:lang="en"><seg>Filesize</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Fileformat'>
+        <tuv xml:lang="en"><seg>Fileformat</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Codec'>
+        <tuv xml:lang="en"><seg>Codec</seg></tuv>
+    </tu>
+    <tu tuid='Field_Track_Plays'>
+        <tuv xml:lang="en"><seg>Plays</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Edit_Submit'>
+        <tuv xml:lang="en"><seg>Update Artist</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Artist'>
+        <tuv xml:lang="en"><seg>Artist Name</seg></tuv>
+    </tu>
+    <tu tuid='Field_Artist_Date_Added'>
+        <tuv xml:lang="en"><seg>Date Added</seg></tuv>
+    </tu>
+    
+    
+    
+    <!-- Form Errors --> 
+
+    <!-- Links -->
+    <tu tuid='Link_Artist_Home'>
+        <tuv xml:lang="en"><seg>Artist Home</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Rss'>
+        <tuv xml:lang="en"><seg>Artist RSS</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Api'>
+        <tuv xml:lang="en"><seg>Artist API</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Rss_All'>
+        <tuv xml:lang="en"><seg>All Artists</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Rss_New'>
+        <tuv xml:lang="en"><seg>New Artists</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Edit'>
+        <tuv xml:lang="en"><seg>Edit Artist</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Album'>
+        <tuv xml:lang="en"><seg>Add Album</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Art'>
+        <tuv xml:lang="en"><seg>Add Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add'>
+        <tuv xml:lang="en"><seg>Add Artist</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Play'>
+        <tuv xml:lang="en"><seg>Play</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_To_Playlist'>
+        <tuv xml:lang="en"><seg>Add To Playlist</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_More_Pictures'>
+        <tuv xml:lang="en"><seg>More Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_More'>
+        <tuv xml:lang="en"><seg>Artist Bio</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Events'>
+        <tuv xml:lang="en"><seg>Events</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Edit_Album'>
+        <tuv xml:lang="en"><seg>Edit Album</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Track'>
+        <tuv xml:lang="en"><seg>Add Track</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Edit_Track'>
+        <tuv xml:lang="en"><seg>Edit Track</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Delete_Image'>
+        <tuv xml:lang="en"><seg>Delete Image</seg></tuv>
+    </tu>
+    <tu tuid='Link_Artist_Add_Picture'>
+        <tuv xml:lang="en"><seg>Add Picture</seg></tuv>
+    </tu>
+
+    <!-- Text -->
+    <tu tuid='Text_Artist_Play_Add'>
+        <tuv xml:lang="en"><seg>Play/Add To Playlist</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Genre'>
+        <tuv xml:lang="en"><seg>Genre:</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Pictures'>
+        <tuv xml:lang="en"><seg>Pictures</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Match'>
+        <tuv xml:lang="en"><seg>Match</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Match'>
+        <tuv xml:lang="en"><seg>Match</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Released'>
+        <tuv xml:lang="en"><seg>Released</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Artist_Track_Count'>
+        <tuv xml:lang="en"><seg>Track Count</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Artist_Playtime_Secs'>
+        <tuv xml:lang="en"><seg>Playtime</seg></tuv>
+    </tu>    
+    <tu tuid='Text_Artist_Play_Count'>
+        <tuv xml:lang="en"><seg>Play Count</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Date_Added'>
+        <tuv xml:lang="en"><seg>Date Added</seg></tuv>
+    </tu>
+    <tu tuid='Txt_Artist_Not_Found'>
+        <tuv xml:lang="en"><seg>Artist Not Found</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_No_Events'>
+        <tuv xml:lang="en"><seg>No events for this artist.</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Artists'>
+        <tuv xml:lang="en"><seg>Artists</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Headliner'>
+        <tuv xml:lang="en"><seg>Headliner</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Venue'>
+        <tuv xml:lang="en"><seg>Venue</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Venue_Date'>
+        <tuv xml:lang="en"><seg>Date</seg></tuv>
+    </tu>
+    <tu tuid='Text_Artist_Image_Added'>
+        <tuv xml:lang="en"><seg>Added</seg></tuv>
+    </tu>
+    <tu tuid='Text_Picture_Delete_Complete'>
+        <tuv xml:lang="en"><seg>The image was removed from the system.</seg></tuv>
+    </tu>
+    
+    
+</body>
+</tmx>

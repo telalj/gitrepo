@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence" adminlang="en-us" srclang="de-at" o-tmf="abc" creationtool="XYZTool" ></header>
+ <body>
+    <tu tuid='Module'>
+        <tuv xml:lang="en"><seg>Genre</seg></tuv>
+    </tu>
+    
+    <!-- Meta tags -->
+    <tu tuid='Meta_Genre_Index_Title'>
+        <tuv xml:lang="en"><seg>Genres - VooDoo Music Box</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Genre_Rss_Title'>
+        <tuv xml:lang="en"><seg>Genres RSS Feeds  - VooDoo Music Box</seg></tuv>
+    </tu>
+
+    <tu tuid='Meta_Genre_Index_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Genres</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Genre_Rss_Description'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box Genres RSS Feeds</seg></tuv>
+    </tu>
+    
+    <tu tuid='Meta_Genre_Index_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box, Genres</seg></tuv>
+    </tu>
+    <tu tuid='Meta_Genre_Rss_Keywords'>
+        <tuv xml:lang="en"><seg>VooDoo Music Box, Genres, RSS Feeds</seg></tuv>
+    </tu>
+        
+    <!-- Menus -->
+    <tu tuid='Menu_Genre_Index'>
+        <tuv xml:lang="en"><seg>Home</seg></tuv>
+    </tu>
+    <tu tuid='Menu_Genre_Rss'>
+        <tuv xml:lang="en"><seg>RSS Feeds</seg></tuv>
+    </tu>
+    
+    <!-- Box Heads -->
+    <tu tuid='Box_Head_Genre_Menu'>
+        <tuv xml:lang="en"><seg>Genre Menu</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Genre_Home'>
+        <tuv xml:lang="en"><seg>Genres</seg></tuv>
+    </tu>
+    <tu tuid='Box_Head_Genre_Rss'>
+        <tuv xml:lang="en"><seg>Genres RSS Feeds</seg></tuv>
+    </tu>
+    
+    <!-- Form Legends -->
+
+    <!-- Form Fields -->
+
+    <!-- Form Errors --> 
+
+    <!-- Links -->
+    <tu tuid='Link_Genre_Home'>
+        <tuv xml:lang="en"><seg>Genre Home</seg></tuv>
+    </tu>
+    <tu tuid='Link_Genre_Rss'>
+        <tuv xml:lang="en"><seg>Genre RSS</seg></tuv>
+    </tu>
+    <tu tuid='Link_Genre_Api'>
+        <tuv xml:lang="en"><seg>Genre API</seg></tuv>
+    </tu>
+    <tu tuid='Link_Genre_Rss_New_Genre'>
+        <tuv xml:lang="en"><seg>New Genre</seg></tuv>
+    </tu>
+    
+    <!-- Text -->
+    <tu tuid='Txt_Artist_Not_Found '>
+        <tuv xml:lang="en"><seg>No Genres Found</seg></tuv>
+    </tu>
+    
+        
+</body>
+</tmx>

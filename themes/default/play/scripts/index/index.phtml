@@ -1,0 +1,48 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Play
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<object style="font-family: verdana;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+    codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" 
+    id="xpsf_player" 
+    align="middle" 
+    height="100%" 
+    width="400">
+
+<param 
+    name="movie" 
+    value="player/xspf_player.swf?playlist_url=<?= $this->playlist;?>&amp;autoload=true&amp;autoplay=1&amp;repeat_playlist&amp;b_bgcolor=#EBEBEB"
+    name="quality" 
+    value="high">
+
+
+<embed 
+    src="player/xspf_player.swf?playlist_url=<?= $this->playlist;?>&amp;autoload=true&amp;autoplay=1&amp;repeat_playlist&amp;b_bgcolor=#000000" 
+    quality="high"  
+    name="xpsf_player" 
+    allowscriptaccess="sameDomain" 
+    type="application/x-shockwave-flash" 
+    pluginspage="http://www.macromedia.com/go/getflashplayer" 
+    align="center" 
+    height="200" 
+    width="400">
+
+</object>

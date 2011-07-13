@@ -1,0 +1,51 @@
+<?php
+/**
+ * VooDoo Music Box
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.voodoomusicbox.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@voodoomusicbox.com so we can send you a copy immediately.
+ *
+ * @category   VooDoo Music Box
+ * @package    Admin
+ * @subpackage View
+ * @copyright  Copyright (c) 2005-2009 VooDoo Music Box. (http://www.VoodooMusicBox.com)
+ * @license    http://www.VoodooMusicBox.com/license/new-bsd     New BSD License
+ * @version    $Id: index.phtml 4 2009-6-1 Jaimie $
+ */
+?>
+<div class="grid_4">
+    <?= $this->partial('country/menu.phtml'); ?>
+</div>
+<div class="grid_12">
+    <div class="box">
+        <h2><?= $this->translate('Box_Head_Conuntry_Index');?></h2>
+        <div class="block">
+            <table>
+                <tr>
+                    <th><?= $this->translate('Field_Countries_Name'); ?></th>
+                    <th><?= $this->translate('Field_Countries_Iso_Code_2'); ?></th>
+                    <th><?= $this->translate('Field_Countries_Iso_Code_3'); ?></th>
+                    <th></th>
+                </tr>
+            <? if (count($this->paginator)): ?>
+            <? foreach ($this->paginator as $item): ?>
+                <tr>
+                    <td><a href="admin/country/view/country_id/<?= $item['zone_country_id']; ?>"><?= $item['countries_name']; ?></a></td>
+                    <td><?= $item['countries_iso_code_2']; ?></td>
+                    <td><?= $item['countries_iso_code_3']; ?></td>
+                    <td><a href="admin/country/remove/country_id/<?= $item['zone_country_id']; ?>"><?= $this->translate('Link_Country_Remove'); ?></a>
+                </tr>
+            <? endforeach;?>
+            <? endif; ?>
+            </table>
+            <?= $this->paginationControl($this->paginator, 'Sliding', 'pagination_control.phtml'); ?>
+        </div>
+    </div>
+</div>
